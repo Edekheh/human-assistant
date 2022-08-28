@@ -1,0 +1,5 @@
+meshing
+/home/dawid/human-assistant/devel/.private/meshing/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
+/home/dawid/human-assistant/devel/.private/meshing/share/meshing/cmake/meshingConfig.cmake /home/dawid/human-assistant/devel/share/meshing/cmake/meshingConfig.cmake
+/home/dawid/human-assistant/devel/.private/meshing/share/meshing/cmake/meshingConfig-version.cmake /home/dawid/human-assistant/devel/share/meshing/cmake/meshingConfig-version.cmake
+/home/dawid/human-assistant/devel/.private/meshing/lib/pkgconfig/meshing.pc /home/dawid/human-assistant/devel/lib/pkgconfig/meshing.pc

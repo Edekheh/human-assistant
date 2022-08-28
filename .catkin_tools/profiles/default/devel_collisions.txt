@@ -1,0 +1,1 @@
+/home/dawid/human-assistant/devel/./cmake.lock 40

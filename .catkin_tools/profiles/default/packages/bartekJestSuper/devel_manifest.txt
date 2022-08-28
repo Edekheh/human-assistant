@@ -1,0 +1,5 @@
+bartekJestSuper
+/home/dawid/human-assistant/devel/.private/bartekJestSuper/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
+/home/dawid/human-assistant/devel/.private/bartekJestSuper/share/bartekJestSuper/cmake/bartekJestSuperConfig-version.cmake /home/dawid/human-assistant/devel/share/bartekJestSuper/cmake/bartekJestSuperConfig-version.cmake
+/home/dawid/human-assistant/devel/.private/bartekJestSuper/share/bartekJestSuper/cmake/bartekJestSuperConfig.cmake /home/dawid/human-assistant/devel/share/bartekJestSuper/cmake/bartekJestSuperConfig.cmake
+/home/dawid/human-assistant/devel/.private/bartekJestSuper/lib/pkgconfig/bartekJestSuper.pc /home/dawid/human-assistant/devel/lib/pkgconfig/bartekJestSuper.pc

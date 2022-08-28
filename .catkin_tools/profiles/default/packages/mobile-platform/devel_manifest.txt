@@ -1,0 +1,5 @@
+mobile-platform
+/home/dawid/human-assistant/devel/.private/mobile-platform/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
+/home/dawid/human-assistant/devel/.private/mobile-platform/share/mobile-platform/cmake/mobile-platformConfig-version.cmake /home/dawid/human-assistant/devel/share/mobile-platform/cmake/mobile-platformConfig-version.cmake
+/home/dawid/human-assistant/devel/.private/mobile-platform/share/mobile-platform/cmake/mobile-platformConfig.cmake /home/dawid/human-assistant/devel/share/mobile-platform/cmake/mobile-platformConfig.cmake
+/home/dawid/human-assistant/devel/.private/mobile-platform/lib/pkgconfig/mobile-platform.pc /home/dawid/human-assistant/devel/lib/pkgconfig/mobile-platform.pc

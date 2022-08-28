@@ -1,0 +1,5 @@
+tests
+/home/dawid/human-assistant/devel/.private/tests/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
+/home/dawid/human-assistant/devel/.private/tests/share/tests/cmake/testsConfig-version.cmake /home/dawid/human-assistant/devel/share/tests/cmake/testsConfig-version.cmake
+/home/dawid/human-assistant/devel/.private/tests/share/tests/cmake/testsConfig.cmake /home/dawid/human-assistant/devel/share/tests/cmake/testsConfig.cmake
+/home/dawid/human-assistant/devel/.private/tests/lib/pkgconfig/tests.pc /home/dawid/human-assistant/devel/lib/pkgconfig/tests.pc

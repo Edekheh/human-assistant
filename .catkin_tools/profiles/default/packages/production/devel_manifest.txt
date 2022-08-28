@@ -1,0 +1,5 @@
+production
+/home/dawid/human-assistant/devel/.private/production/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
+/home/dawid/human-assistant/devel/.private/production/share/production/cmake/productionConfig.cmake /home/dawid/human-assistant/devel/share/production/cmake/productionConfig.cmake
+/home/dawid/human-assistant/devel/.private/production/share/production/cmake/productionConfig-version.cmake /home/dawid/human-assistant/devel/share/production/cmake/productionConfig-version.cmake
+/home/dawid/human-assistant/devel/.private/production/lib/pkgconfig/production.pc /home/dawid/human-assistant/devel/lib/pkgconfig/production.pc

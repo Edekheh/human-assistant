@@ -1,6 +1,6 @@
 # Mobile platform with robotic arm example
 
-
+# NEW : in human-asistant foldar type : catkin build after sourcing 
 
 
 # Prerequsites :
