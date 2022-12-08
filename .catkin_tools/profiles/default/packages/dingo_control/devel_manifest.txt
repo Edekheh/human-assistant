@@ -1,0 +1,5 @@
+dingo/dingo_control
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_control/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_control/share/dingo_control/cmake/dingo_controlConfig.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/dingo_control/cmake/dingo_controlConfig.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_control/share/dingo_control/cmake/dingo_controlConfig-version.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/dingo_control/cmake/dingo_controlConfig-version.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_control/lib/pkgconfig/dingo_control.pc /home/marabir/catkin_ws/src/human-assistant/devel/lib/pkgconfig/dingo_control.pc

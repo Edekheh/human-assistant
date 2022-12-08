@@ -1,0 +1,2 @@
+dingo_desktop/dingo_desktop
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_desktop/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock

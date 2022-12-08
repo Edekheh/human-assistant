@@ -1,0 +1,7 @@
+geometric_shapes
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/share/geometric_shapes/cmake/geometric_shapesConfig.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/geometric_shapes/cmake/geometric_shapesConfig.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/share/geometric_shapes/cmake/geometric_shapesConfig-version.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/geometric_shapes/cmake/geometric_shapesConfig-version.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/lib/libgeometric_shapes.so.0.7.3 /home/marabir/catkin_ws/src/human-assistant/devel/lib/libgeometric_shapes.so.0.7.3
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/lib/libgeometric_shapes.so /home/marabir/catkin_ws/src/human-assistant/devel/lib/libgeometric_shapes.so
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/geometric_shapes/lib/pkgconfig/geometric_shapes.pc /home/marabir/catkin_ws/src/human-assistant/devel/lib/pkgconfig/geometric_shapes.pc

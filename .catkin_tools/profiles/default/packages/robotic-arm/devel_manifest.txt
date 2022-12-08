@@ -1,5 +1,5 @@
 robotic-arm
-/home/dawid/human-assistant/devel/.private/robotic-arm/cmake.lock /home/dawid/human-assistant/devel/./cmake.lock
-/home/dawid/human-assistant/devel/.private/robotic-arm/share/robotic-arm/cmake/robotic-armConfig.cmake /home/dawid/human-assistant/devel/share/robotic-arm/cmake/robotic-armConfig.cmake
-/home/dawid/human-assistant/devel/.private/robotic-arm/share/robotic-arm/cmake/robotic-armConfig-version.cmake /home/dawid/human-assistant/devel/share/robotic-arm/cmake/robotic-armConfig-version.cmake
-/home/dawid/human-assistant/devel/.private/robotic-arm/lib/pkgconfig/robotic-arm.pc /home/dawid/human-assistant/devel/lib/pkgconfig/robotic-arm.pc
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/robotic-arm/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/robotic-arm/share/robotic-arm/cmake/robotic-armConfig-version.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/robotic-arm/cmake/robotic-armConfig-version.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/robotic-arm/share/robotic-arm/cmake/robotic-armConfig.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/robotic-arm/cmake/robotic-armConfig.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/robotic-arm/lib/pkgconfig/robotic-arm.pc /home/marabir/catkin_ws/src/human-assistant/devel/lib/pkgconfig/robotic-arm.pc

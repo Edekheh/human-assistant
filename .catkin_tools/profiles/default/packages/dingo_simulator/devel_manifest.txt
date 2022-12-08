@@ -1,0 +1,2 @@
+dingo_simulator/dingo_simulator
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/dingo_simulator/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock

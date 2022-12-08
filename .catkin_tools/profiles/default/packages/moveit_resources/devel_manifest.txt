@@ -1,0 +1,2 @@
+moveit_resources/moveit_resources
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/moveit_resources/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock

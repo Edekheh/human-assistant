@@ -1,0 +1,27 @@
+[submodule "src/mobile-platform/src/dingo"]
+	path = src/mobile-platform/src/dingo
+	url = https://github.com/dingo-cpr/dingo.git
+[submodule "src/mobile-platform/src/dingo_simulator"]
+	path = src/mobile-platform/src/dingo_simulator
+	url = https://github.com/dingo-cpr/dingo_simulator.git
+[submodule "src/mobile-platform/src/dingo_desktop"]
+	path = src/mobile-platform/src/dingo_desktop
+	url = https://github.com/dingo-cpr/dingo_desktop.git
+[submodule "src/dingo"]
+	path = src/dingo
+	url = https://github.com/dingo-cpr/dingo.git
+[submodule "src/dingo_simulator"]
+	path = src/dingo_simulator
+	url = https://github.com/dingo-cpr/dingo_simulator.git
+[submodule "src/dingo_desktop"]
+	path = src/dingo_desktop
+	url = https://github.com/dingo-cpr/dingo_desktop.git
+[submodule "src/-b"]
+	path = src/-b
+	url = https://github.com/ros-planning/moveit_tutorials.git
+[submodule "src/moveit_tutorials"]
+	path = src/moveit_tutorials
+	url = https://github.com/ros-planning/moveit_tutorials.git
+[submodule "src/panda_moveit_config"]
+	path = src/panda_moveit_config
+	url = https://github.com/ros-planning/panda_moveit_config.git
