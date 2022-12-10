@@ -1,6 +1,38 @@
 <launch>
     <!-- node for platform -->
-        
+    <arg name="config" default="$(optenv DINGO_CONFIG front_laser)" />
+    <arg name="use_sim_time" default="true" />
+
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+    <arg name="world_name" default="$(find gazebo_ros)/worlds/empty_world.world" />
+
+    <arg name="x"         default="0"/>
+    <arg name="y"         default="0"/>
+    <arg name="z"         default="0.1"/>
+    <arg name="yaw"       default="0"/>
+
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="debug" value="0" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$(arg headless)" />
+        <arg name="world_name" value="$(arg world_name)" />
+      </include>
+
+
+    <rosparam command="load" file="$(find dingo_gazebo)/config/gains_omni.yaml" />
+    <param name="robot_description"
+           command="$(find dingo_description)/scripts/env_run
+                    $(find dingo_description)/urdf/configs/$(arg config)
+                    $(find xacro)/xacro $(find mobile-platform)/urdf/mobile-platform.urdf.xacro" />
+  
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />   
+    
+    
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+	      args="-urdf -model mobile_platform -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw)" />
 
 
 
