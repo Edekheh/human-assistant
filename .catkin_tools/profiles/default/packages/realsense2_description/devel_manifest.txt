@@ -1,0 +1,5 @@
+realsense-ros-gazebo/realsense-ros/realsense2_description
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/realsense2_description/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/realsense2_description/lib/pkgconfig/realsense2_description.pc /home/marabir/catkin_ws/src/human-assistant/devel/lib/pkgconfig/realsense2_description.pc

@@ -1,0 +1,2 @@
+franka_ros/franka_ros
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/franka_ros/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock

@@ -1,0 +1,5 @@
+franka_ros/franka_description
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/franka_description/cmake.lock /home/marabir/catkin_ws/src/human-assistant/devel/./cmake.lock
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/franka_description/share/franka_description/cmake/franka_descriptionConfig.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/franka_description/cmake/franka_descriptionConfig.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/franka_description/share/franka_description/cmake/franka_descriptionConfig-version.cmake /home/marabir/catkin_ws/src/human-assistant/devel/share/franka_description/cmake/franka_descriptionConfig-version.cmake
+/home/marabir/catkin_ws/src/human-assistant/devel/.private/franka_description/lib/pkgconfig/franka_description.pc /home/marabir/catkin_ws/src/human-assistant/devel/lib/pkgconfig/franka_description.pc

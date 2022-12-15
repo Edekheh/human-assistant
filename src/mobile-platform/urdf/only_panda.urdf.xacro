@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot name="only_panda" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro"/>
+  <xacro:include filename="$(find mobile-platform)/urdf/_d435.urdf.xacro"/>
+  <!-- <xacro:include filename="$(find mobile-platform)/urdf/_d435.gazebo.xacro"/> -->
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="world" />
+    <child  link="panda_link0" />
+  </joint>
+
+  <xacro:sensor_d435 parent="panda_link8">
+    <origin xyz="0.035 -0.035 0.05" rpy="0 -1.57 -0.785"/>
+  </xacro:sensor_d435>
+ </robot>
