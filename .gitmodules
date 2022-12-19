@@ -25,3 +25,6 @@
 [submodule "src/panda_moveit_config"]
 	path = src/panda_moveit_config
 	url = https://github.com/ros-planning/panda_moveit_config.git
+[submodule "src/gazebo_ros_pkgs"]
+	path = src/gazebo_ros_pkgs
+	url = https://github.com/ros-simulation/gazebo_ros_pkgs.git
