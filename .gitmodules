@@ -25,12 +25,6 @@
 [submodule "src/panda_moveit_config"]
 	path = src/panda_moveit_config
 	url = https://github.com/ros-planning/panda_moveit_config.git
-[submodule "src/gazebo_ros_pkgs"]
-	path = src/gazebo_ros_pkgs
-	url = https://github.com/ros-simulation/gazebo_ros_pkgs.git
-[submodule "src/franka_ros"]
-	path = src/franka_ros
-	url = https://github.com/frankaemika/franka_ros.git
 [submodule "src/realsense_gazebo_plugin"]
 	path = src/realsense_gazebo_plugin
 	url = https://github.com/pal-robotics/realsense_gazebo_plugin.git

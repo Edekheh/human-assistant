@@ -5,7 +5,7 @@
   <arg name="headless" default="false" />
   <arg name="world_name" default="$(find gazebo_ros)/worlds/empty_world.world" />
   <arg name="arm_id" default="panda"/>
-  <arg name="arm_namespace" default="panda"/>
+  <!-- <arg name="arm_namespace" default="panda"/> -->
   <!-- <arg name="x"         default="0"/>
   <arg name="y"         default="0"/>
   <arg name="z"         default="0.1"/>
