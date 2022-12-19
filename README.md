@@ -1,6 +1,16 @@
-# Mobile platform with robotic arm example
+# Only Panda with realsense Launch
+To run Panda arm in Gazebo with realsense and /image topics, you need to run 
 
-# NEW : in human-asistant foldar type : catkin build after sourcing 
+```
+git clone git@github.com:Edekheh/human-assistant.git --recursive --branch develop
+```
+this makes you clone the main repo with all submodules which are put in separate locations. 
+
+After clone, ```catkin build  ``` whole workspace and ```source devel/setup.bash``` to enable finding packages via their names.
+
+To run example code for spawning panda with realsense sensor use ```roslaunch mobile-platform only_panda.launch``` in terminal after ```source devel/setup.bash``` and gazebo will start. 
+
+To see topic lists use ```rostopic list``` in different terminator window, and to preview the image use ```rosrun rviz rviz``` and add camera topic to see what robot can see.
 
 
 # Prerequsites :
