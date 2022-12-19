@@ -9,7 +9,7 @@
 	url = https://github.com/dingo-cpr/dingo_desktop.git
 [submodule "src/dingo"]
 	path = src/dingo
-	url = https://github.com/dingo-cpr/dingo.git
+	url = git@github.com:kosmonauta144/dingo.git
 [submodule "src/dingo_simulator"]
 	path = src/dingo_simulator
 	url = https://github.com/dingo-cpr/dingo_simulator.git
@@ -30,4 +30,4 @@
 	url = https://github.com/pal-robotics/realsense_gazebo_plugin.git
 [submodule "src/franka_ros"]
 	path = src/franka_ros
-	url = https://github.com/frankaemika/franka_ros.git
+	url = git@github.com:kosmonauta144/franka_ros.git
