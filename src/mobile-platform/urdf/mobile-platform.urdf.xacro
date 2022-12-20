@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <robot name="mobile_platform" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find dingo_description)/urdf/dingo.urdf.xacro"/>
-  <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro"/>
-  <xacro:include filename="$(find packagename)/urdf/urdf_d435.gazebo.xacro"/>
+  <!-- <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro"/> -->
+  <!-- <xacro:include filename="$(find mobile-platform)/urdf/_d435.urdf.xacro"/> -->
+
+  <!-- <xacro:sensor_d435 parent="panda_link8">
+    <origin xyz="0.035 -0.035 0.05" rpy="0 -1.57 -0.785"/>
+  </xacro:sensor_d435> -->
+  <xacro:include filename="$(find mobile-platform)/urdf/_d435.urdf.xacro"/>
+  <xacro:sensor_d435 parent="base_link" topics_ns="camera_front">
+    <origin xyz="0.35  0 0.1" rpy="0 -0.13 0"/>
+  </xacro:sensor_d435>
+
+  
+  <!-- <joint name="panda_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="panda_link0"/>
+    <origin xyz="0 0 0.1"/>
+  </joint> -->
 </robot>

@@ -4,7 +4,7 @@
   <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
   <arg name="headless" default="false" />
-  <arg name="world_name" default="$(find gazebo_ros)/worlds/empty_world.world" />
+  <arg name="world_name" default="$(find gazebo_ros)/worlds/workshop_example.world" />
   <arg name="arm_id" default="panda"/>
   <arg name="arm_namespace" default="panda"/>
   <!-- <arg name="x"         default="0"/>
@@ -36,14 +36,14 @@
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
 	    args="-urdf -model mobile_platform -param robot_description" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-      <arg name="debug" value="0" />
-      <arg name="gui" value="$(arg gui)" />
-      <arg name="use_sim_time" value="$(arg use_sim_time)" />
-      <arg name="headless" value="$(arg headless)" />
-      <arg name="world_name" value="$(arg world_name)" />
-      <arg name="paused" value="false"/>
+      <param name="debug" value="0" />
+      <param name="gui" value="$(arg gui)" />
+      <param name="use_sim_time" value="$(arg use_sim_time)" />
+      <param name="headless" value="$(arg headless)" />
+      <param name="world_name" value="$(arg world_name)" />
+      <param name="paused" value="false"/>
   </include>
   
-  
+  <include file="$(find mobile-platform)/launch/rtabmap_assistant.launch"/>
   
 </launch>
