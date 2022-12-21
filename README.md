@@ -1,4 +1,16 @@
 # Only Panda with realsense Launch
+
+## Before cloning
+Before cloning you need  install libfranka library from ubuntu libraries
+
+```
+sudo apt install ros-noetic-libfranka ros-noetic-franka-ros
+sudo apt-get install ros-$ROS_DISTRO-realsense2-description
+```
+
+## Cloning and running
+
+
 To run Panda arm in Gazebo with realsense and /image topics, you need to run 
 
 ```
