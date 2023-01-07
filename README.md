@@ -43,14 +43,14 @@ nano ros.yaml
 ```
 Change camera_reading topic to ```/camera/color/image_raw```
 
-Type ```catkin build```. 
+Go back to the root of human-assistant project and type ```catkin build```. 
 If errors with GNU occure, downgrade GCC version:
 ```
 https://stackoverflow.com/questions/65605972/cmake-unsupported-gnu-version-gcc-versions-later-than-8-are-not-supported
 ```
 
 After this steps type: ```source devel/setup.bash```. Next type ```roslaunch mobile-platform only_panda.launch```.
-To run YOLO package use ```roslaunch darknet_ros darknet_ros.launch```
+To run YOLO package, in other terminal window use ```roslaunch darknet_ros darknet_ros.launch```
 
 # Prerequsites :
 1. Ubuntu 20.04 :
