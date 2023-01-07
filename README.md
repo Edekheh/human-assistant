@@ -24,6 +24,33 @@ To run example code for spawning panda with realsense sensor use ```roslaunch mo
 
 To see topic lists use ```rostopic list``` in different terminator window, and to preview the image use ```rosrun rviz rviz``` and add camera topic to see what robot can see.
 
+## Running project with YOLO
+If you want to run this project with YOLO object detection package you need to have installed:
+```
+1. OpenCV - https://opencv.org/
+2. boost  - https://www.boost.org/
+```
+
+Next you need to clone yolo branch:
+```
+git clone git@github.com:Edekheh/human-assistant.git --recursive --branch yolo
+```
+
+To make YOLO package working you have to change ros.yaml file:
+```
+cd src/darknet_ros/darknet_ros/config
+nano ros.yaml
+```
+Change camera_reading topic to ```/camera/color/image_raw```
+
+Type ```catkin build```. 
+If errors with GNU occure, downgrade GCC version:
+```
+https://stackoverflow.com/questions/65605972/cmake-unsupported-gnu-version-gcc-versions-later-than-8-are-not-supported
+```
+
+After this steps type: ```source devel/setup.bash```. Next type ```roslaunch mobile-platform only_panda.launch```.
+To run YOLO package use ```roslaunch darknet_ros darknet_ros.launch```
 
 # Prerequsites :
 1. Ubuntu 20.04 :

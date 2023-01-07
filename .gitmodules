@@ -31,3 +31,6 @@
 [submodule "src/franka_ros"]
 	path = src/franka_ros
 	url = git@github.com:kosmonauta144/franka_ros.git
+[submodule "src/darknet_ros"]
+	path = src/darknet_ros
+	url = git@github.com:leggedrobotics/darknet_ros.git
