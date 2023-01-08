@@ -8,8 +8,11 @@ sudo apt install ros-noetic-libfranka ros-noetic-franka-ros
 sudo apt-get install ros-$ROS_DISTRO-realsense2-description
 ```
 
-## Cloning and running
 
+
+## Cloning
+
+### Repo
 
 To clone repo and install dependecies run
 
@@ -20,6 +23,24 @@ catkin build
 rosdep install --from-paths --ignore-src
 ```
 this makes you clone the main repo with all submodules which are put in separate locations. 
+
+### Worlds
+to get office_small.world and all neccesarry models you need to choose the directory and clone the repo
+
+```
+git clone 
+```
+and then add this as a gazebo_source to your *.bashrc* file as
+
+```
+export GAZEBO_MODEL_PATH=:/home/marabir/Documents/gazebo_words/gazebo_models_worlds_collection/models
+export GAZEBO_RESOURCE_PATH=$:/home/marabir/Documents/gazebo_words/gazebo_models_worlds_collection/worlds
+
+```
+with your proper destination.
+
+## Run
+
 
 To run the simulation of the whole robot (which crashes immediately) run ```roslaunch mobile-platform mobile-platform-with-arm.launch```.
 
