@@ -3,10 +3,10 @@
   <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro"/>
   <xacro:include filename="$(find mobile-platform)/urdf/_d435.urdf.xacro"/>
   <!-- <xacro:include filename="$(find mobile-platform)/urdf/_d435.gazebo.xacro"/> -->
-  <link name="panda_base_link" />
-  <joint name="link_link_link" type="fixed">
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="panda_base_link" />
+    <parent link="world" />
     <child  link="panda_link0" />
   </joint>
 
