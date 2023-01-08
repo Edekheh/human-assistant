@@ -11,7 +11,7 @@ sudo apt-get install ros-$ROS_DISTRO-realsense2-description
 ## Cloning and running
 
 
-To run Panda arm in Gazebo with realsense and /image topics, you need to run 
+To clone repo and install dependecies run
 
 ```
 git clone git@github.com:Edekheh/human-assistant.git --recursive --branch develop
