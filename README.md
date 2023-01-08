@@ -28,14 +28,13 @@ this makes you clone the main repo with all submodules which are put in separate
 to get office_small.world and all neccesarry models you need to choose the directory and clone the repo
 
 ```
-git clone 
+git clone https://github.com/leonhartyao/gazebo_models_worlds_collection
 ```
 and then add this as a gazebo_source to your *.bashrc* file as
 
 ```
 export GAZEBO_MODEL_PATH=:/home/marabir/Documents/gazebo_words/gazebo_models_worlds_collection/models
 export GAZEBO_RESOURCE_PATH=$:/home/marabir/Documents/gazebo_words/gazebo_models_worlds_collection/worlds
-
 ```
 with your proper destination.
 
