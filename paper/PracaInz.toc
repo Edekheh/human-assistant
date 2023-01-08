@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{Algorytm A*}{9}{subsubsection*.6}%
 \contentsline {subsubsection}{Złożoność obliczeniowa}{9}{subsubsection*.7}%
 \contentsline {section}{\numberline {1.2}Cel pracy}{9}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Układ pracy}{10}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Przegląd literatury (Adam Nowak)}{11}{chapter.2}%
-\contentsline {chapter}{Spis rysunków}{12}{chapter*.11}%
-\contentsline {chapter}{Spis tabel}{13}{chapter*.12}%
+\contentsline {section}{\numberline {1.3}Układ pracy}{9}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Przegląd literatury (Adam Nowak)}{10}{chapter.2}%
+\contentsline {chapter}{Spis rysunków}{11}{chapter*.9}%
+\contentsline {chapter}{Spis tabel}{12}{chapter*.10}%

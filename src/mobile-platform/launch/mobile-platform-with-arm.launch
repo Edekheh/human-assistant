@@ -1,0 +1,78 @@
+<launch>
+    <!-- node for platform -->
+    <arg name="config" default="$(optenv DINGO_CONFIG front_laser)" />
+    <arg name="use_sim_time" default="true" />
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+    <arg name="world_name" default="office_small.world" />
+    <arg name="arm_id" default="panda"/>
+    <arg name="arm_namespace" default="panda"/>
+    <!-- <arg name="x"         default="0"/>
+    <arg name="y"         default="0"/>
+    <arg name="z"         default="0.1"/>
+    <arg name="yaw"       default="0"/> -->
+    
+    <!-- <rosparam command="load" file="$(find dingo_gazebo)/config/control_omni.yaml" /> -->
+    
+    <param name="robot_description"
+      command="$(find dingo_description)/scripts/env_run
+      $(find dingo_description)/urdf/configs/$(arg config)
+      $(find xacro)/xacro $(find mobile-platform)/urdf/mobile-platform-with-arm.urdf.xacro" />
+  
+    <rosparam file="$(find franka_gazebo)/config/franka_hw_sim.yaml" subst_value="true" />
+    <rosparam file="$(find franka_gazebo)/config/sim_controllers.yaml" subst_value="true" />
+    <rosparam command="load" file="$(find dingo_gazebo)/config/gains_omni.yaml"/>
+  
+    <param name="m_ee" value="0.76" />  
+  
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> 
+    <node name="joint_state_publisher" type="joint_state_publisher" pkg="joint_state_publisher">
+      <rosparam param="source_list">[franka_state_controller/joint_states, franka_gripper/joint_states] </rosparam>
+      <param name="rate" value="30"/>
+    </node>  
+  
+  
+    <!-- rgb pointcloud and aligning depth to rgb for rtabmap mapping -->
+    <!-- <group ns="camera_front">
+      <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" />
+    
+      <node pkg="nodelet" type="nodelet" name="nodelet1"
+            args="load depth_image_proc/register nodelet_manager">
+        <remap from="rgb/camera_info" to="color/camera_info"/>
+        <remap from="depth/camera_info" to="depth/camera_info"/>
+        <remap from="depth/image_rect" to="depth/image_raw"/>
+        <remap from="depth_registered/camera_info" to="aligned_depth_to_color/camera_info"/>
+        <remap from="depth_registered/image_rect" to="aligned_depth_to_color/image_raw"/>
+      </node>
+    
+      <node pkg="nodelet" type="nodelet" name="nodelet2"
+            args="load depth_image_proc/point_cloud_xyzrgb nodelet_manager">
+        <remap from="rgb/image_rect_color" to="color/image_raw"/>
+        <remap from="rgb/camera_info" to="color/camera_info"/>
+        <remap from="depth_registered/camera_info" to="aligned_depth_to_color/camera_info"/>
+        <remap from="depth_registered/image_rect" to="aligned_depth_to_color/image_raw"/>
+        <remap from="depth_registered/points" to="depth/color/points"/>
+      </node>
+    </group> -->
+
+    
+  
+  
+
+
+   <!-- <remap from="/dingo_velocity_controller/cmd_vel" to="/cmd_vel"/> -->
+
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+          args="-urdf -model mobile_platform -param robot_description" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="debug" value="0" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$(arg headless)" />
+        <arg name="world_name" value="$(arg world_name)" />
+        <arg name="paused" value="true"/>
+    </include>
+    
+
+
+  </launch>
