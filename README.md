@@ -1,4 +1,4 @@
-# Only Panda with realsense Launch
+# Start the simulation
 
 ## Before cloning
 Before cloning you need  install libfranka library from ubuntu libraries
@@ -15,10 +15,13 @@ To run Panda arm in Gazebo with realsense and /image topics, you need to run
 
 ```
 git clone git@github.com:Edekheh/human-assistant.git --recursive --branch develop
+cd ..
+catkin build
+rosdep install --from-paths --ignore-src
 ```
 this makes you clone the main repo with all submodules which are put in separate locations. 
 
-After clone, ```catkin build  ``` whole workspace and ```source devel/setup.bash``` to enable finding packages via their names.
+To run the simulation of the whole robot (which crashes immediately) run ```roslaunch mobile-platform mobile-platform-with-arm.launch```.
 
 To run example code for spawning panda with realsense sensor use ```roslaunch mobile-platform only_panda.launch``` in terminal after ```source devel/setup.bash``` and gazebo will start. 
 
