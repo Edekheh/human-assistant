@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="mobile_platform" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:include filename="$(find dingo_description)/urdf/dingo.urdf.xacro"/>
-  <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro"/>
+  <xacro:include filename="$(find dingo_description)/urdf/dingo.urdf.xacro" ns="platform"/>
+  <xacro:include filename="$(find franka_description)/robots/panda/panda.urdf.xacro" ns="arm"/>
   <!-- <xacro:include filename="$(find mobile-platform)/urdf/_d435.urdf.xacro"/> -->
 
   <!-- <xacro:sensor_d435 parent="panda_link8">

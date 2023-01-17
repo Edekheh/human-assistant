@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="robot_namespace" default="/"/>
+
+  <param name="robot_description"
+    command="$(find xacro)/xacro $(find mobile-platform)/urdf/mobile-platform-with-arm.urdf.xacro
+             robot_namespace:=$(arg robot_namespace)"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>
