@@ -73,7 +73,7 @@
       <param name="base_global_planner" type="string" value="navfn/NavfnROS" />
       <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
     
-      <remap from="odom" to="odometry/filtered" />
+      <!-- <remap from="odom" to="odometry/filtered" /> -->
     </node>
 
    <remap from="/dingo_velocity_controller/cmd_vel" to="/cmd_vel"/>
@@ -85,7 +85,7 @@
         <arg name="use_sim_time" value="$(arg use_sim_time)" />
         <arg name="headless" value="$(arg headless)" />
         <arg name="world_name" value="$(arg world_name)" />
-        <arg name="paused" value="true"/>
+        <arg name="paused" value="false"/>
     </include>
     
     <include file="$(find mobile-platform)/launch/rtabmap_assistant.launch"/>
