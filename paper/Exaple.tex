@@ -234,10 +234,7 @@
 % Read the url.sty source comments for usage information. Basically,
 % \url{my_url_here}.
 
-
-
-
-
+\newcommand{\shellcmd}[1]{\\\texttt{\footnotesize\# #1}\\}
 % *** Do not adjust lengths that control margins, column widths, etc. ***
 % *** Do not use packages that alter fonts (such as pslatex).         ***
 % There should be no need to do such things with IEEEtran.cls V1.6 and later.
@@ -421,7 +418,12 @@ YOLO algorithm used in the project is trained on COCO dataset. Based on that dat
 \end{itemize}
 
 \subsection{Installation and integration}
-To run YOLO object detection package OpenCV and boost libraries are needed. In order to integrate the package with the project there was a need to modify ros.yml file and change camera\_reading topic to \url{/camera/color/image_raw}. 
+To run YOLO object detection package OpenCV and boost libraries are needed. Also, before running YOLO algorithm pretrained weights should be downloaded. There are two possible options: weights for YOLO tiny and regular weights. Weights for YOLO tiny are used in smaller model, which is substantially faster, but less accurate. The weights can be downloaded by running a command:
+\shellcmd{wget http://pjreddie.com/media/files/yolov3.weights}
+After dowladnig weights the package can be run by a following command:
+\shellcmd{roslaunch darknet\_ros darknet\_ros.launch}
+In order to integrate the package with the project there was a need to modify ros.yml file and change camera\_reading topic to \url{/camera/color/image_raw}.
+
 
 \section{Whole body motion control algorithm}
 For the purpose of this experiment, let assume that the approximate location of the desired object is known and it has been added to the map as a label. Then, next steps for the algorithm are as presented below.
