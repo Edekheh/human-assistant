@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  21 JAN 2023 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  21 JAN 2023 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,34 +150,48 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-<img/navigation_scheme.png, id=1, 811.03pt x 333.245pt>
-File: img/navigation_scheme.png Graphic file (type png)
-<use img/navigation_scheme.png>
-Package pdftex.def Info: img/navigation_scheme.png  used on input line 348.
-(pdftex.def)             Requested size: 258.0pt x 106.01004pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 348--349
-[][] 
+Underfull \hbox (badness 1515) in paragraph at lines 343--344
+[]\OT1/ptm/m/n/10 Sensor se-lec-tion in-volves con-sid-er-ing var-i-ous dif-fer-ent
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 347.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 347.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- </home/marabir/catkin_ws/src/human-assistant/paper/img/navigation_scheme.png>]
+]
+<img/navigation_scheme.png, id=11, 811.03pt x 333.245pt>
+File: img/navigation_scheme.png Graphic file (type png)
+<use img/navigation_scheme.png>
+Package pdftex.def Info: img/navigation_scheme.png  used on input line 373.
+(pdftex.def)             Requested size: 258.0pt x 106.01004pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 373--374
+[][] 
+ []
+
 <img/global_local_planner.png, id=13, 685.56125pt x 449.68pt>
 File: img/global_local_planner.png Graphic file (type png)
 <use img/global_local_planner.png>
-Package pdftex.def Info: img/global_local_planner.png  used on input line 363.
+Package pdftex.def Info: img/global_local_planner.png  used on input line 388.
 (pdftex.def)             Requested size: 206.39685pt x 135.37848pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 379.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 379.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 431.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 431.
+[2 </home/marabir/catkin_ws/src/human-assistant/paper/img/navigation_scheme.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/global_local_planner.png>]
+<img/algorithm_no_problem.png, id=19, 603.25375pt x 41.15375pt>
+File: img/algorithm_no_problem.png Graphic file (type png)
+<use img/algorithm_no_problem.png>
+Package pdftex.def Info: img/algorithm_no_problem.png  used on input line 428.
+(pdftex.def)             Requested size: 258.0pt x 17.60031pt.
 
+Overfull \hbox (6.0pt too wide) in paragraph at lines 428--429
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 473.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 473.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -189,20 +203,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 </home/marabir/catkin_ws/src/human-assistant/paper/img/global_local_planner.png>] (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux) ) 
+[3
+
+ </home/marabir/catkin_ws/src/human-assistant/paper/img/algorithm_no_problem.png>] (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux) ) 
 Here is how much of TeX's memory you used:
- 1919 strings out of 481239
- 31957 string characters out of 5920376
+ 1925 strings out of 481239
+ 32140 string characters out of 5920376
  270449 words of memory out of 5000000
- 17208 multiletter control sequences out of 15000+600000
+ 17213 multiletter control sequences out of 15000+600000
  563528 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,520b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (2 pages, 127156 bytes).
+Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (3 pages, 137160 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

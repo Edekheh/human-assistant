@@ -336,8 +336,33 @@ To implement a whole-body-control algorithm there was a need for the integration
 In this paper the challenges that were encountered during the implementation of the approach and the solutions that were developed to overcome them were described. 
 The results of experiments conducted to evaluate the performance of the whole-body-control approach were also presented and discussed.
 
-\subsection{Simulation environment and used components} 
-To perform integration and tests, Gazebo and Robot Operating System were choosen. Clearpath Dingo was used as a mobile platform and Panda Franka Emika was used as a manipulator. To perform localisation and mapping, Sick 2D LMS1xx lidar and Intel Realsense RGBD camera were used.pp[]. To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending. 
+\subsection{Simulation environment and robots used in experiment} 
+To perform integration and tests, Gazebo and Robot Operating System were choosen. As a holonomic mobile platform Clearpath Dingo robot has been used. As a manipulator with 7 DoF,  to provide wide range of possible movements Panda Franka Emika has been choosen.
+
+\subsection{Sensor selection}
+Sensor selection involves considering various different aproaches for subtasks needed to achieve main goal.
+
+Four main subtasks were:
+\begin{itemize}
+  \item Localisation and mapping
+  \item Object Recognition
+  \item Graps point definition
+  \item Grabbing
+\end{itemize}
+
+First three tasks are essential in term of sensor selection, because grabbing alone could be performed based on \textit{a priori} gained data. Also, sensors which are commonly used to aquire Object Recognition and Graps point definition are simmilar so they will be present in common subsection.
+
+\subsubsection{Localisation and mapping}
+Localisation and mapping is crucial when it comes to going through the environment and there are three approaches. First is using 2d lidar sensor, which gives information about obstacles on 2d plane. It is efficient and easy to implement and in  singular-level buildings and without 
+ability to go under the obstacles - completely adequate. If we would like to allow robot to go over (i.e. drones) it could be better to use 3d laser scanners (which give a point cloud data which allows to map 3d environment) or RGBD cameras which allow to create 
+pointcloud with limited field of view and perform computer vision at the same time.
+
+To perform localisation and mapping, Sick 2D LMS1xx lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
+To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending.
+
+\subsubsection{Object Recognition and Graps point definition}
+To recognise objects, it is necessary to have their rgb image, which has to be captured by the camera. 
+To define grabbing point it is important to have the rgb data and pointcloud to perform shape 
 
 \section{Autonomous driving}
 To aquire autonomous driving in indoor environment, system consisted of two main parts - localisation and mapping algorithm and motion planner algorithm.
@@ -363,6 +388,12 @@ Octomap was considered as an extension of the system to calculate the possibilit
   \includegraphics[width=0.4\textwidth]{img/global_local_planner.png}
   \caption[global and local path]{Goal position (red arrow), global path (red line) and local path (blue line)}
 \end{figure}
+
+\section{Manipulator control}
+To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. 
+
+
+
 \section{YOLO algorithm}
 In this section YOLO algorithm was described. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
 
@@ -388,6 +419,17 @@ YOLO algorithm used in the project is trained on COCO dataset. Based on that dat
 
 \subsection{Installation and integration}
 To run YOLO object detection package OpenCV and boost libraries are needed. In order to integrate the package with the project there was a need to modify ros.yml file and change camera\_reading topic to \url{/camera/color/image_raw}. 
+
+\section{Whole body motion control algorithm}
+For the purpose of this experiment, let assume that the approximate location of the desired object is known and it has been added to the map as a label. Then, next steps for the algorithm are as presented below.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/algorithm_no_problem.png}
+  \caption{Sequence of achieving the task}
+\end{figure}
+
+Grabbing action should also be extended to calculate i
 
 \section{Conclusion}
 The conclusion goes here.
