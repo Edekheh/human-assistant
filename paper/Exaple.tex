@@ -358,7 +358,11 @@ To move the platform in simulated environment, it has been decided to use \texti
 and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
 Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented. 
 
-
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/global_local_planner.png}
+  \caption[global and local path]{Goal position (red arrow), global path (red line) and local path (blue line)}
+\end{figure}
 \section{YOLO algorithm}
 In this section YOLO algorithm was described. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
 
