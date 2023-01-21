@@ -393,8 +393,8 @@ Octomap was considered as an extension of the system to calculate the possibilit
 
 
 \section{Manipulator control}
-To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools. \cite{MOVEIT} TO BE CONTINUE...
-
+To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools. \cite{MOVEIT}
+MoveIt uses IKFast the Roboti Kinematics Compiler which is a powerful inverse kinematics solver. 
 
 \section{Object recognition}
 In this section YOLO algorithm was described, which was used for object recogniton task. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
@@ -436,7 +436,10 @@ For the purpose of this experiment, let assume that the approximate location of 
   \caption{Sequence of achieving the task}
 \end{figure}
 
-Grabbing action should also be extended to calculate i
+Grabbing action should also be extended to measure the distance from the base\_link of the object and execute the base movement if it is necessary. To maintain all states and autonomy, the state node has been proposed with configuration showed below.
+
+HERE GRAPH OF STATE CONTROLLER WHICH I AM DRAWING.
+
 
 \section{Conclusion}
 The conclusion goes here.

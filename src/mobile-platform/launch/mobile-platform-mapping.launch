@@ -57,7 +57,7 @@
   
     <param name="use_action_for_goal" type="bool" value="true"/>
     <remap from="move_base"            to="/move_base"/>
-    
+    <remap from="goal_out"  to="/move_base_simple/goal"/>	
     
   
   
