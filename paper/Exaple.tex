@@ -357,12 +357,15 @@ Localisation and mapping is crucial when it comes to going through the environme
 ability to go under the obstacles - completely adequate. If we would like to allow robot to go over (i.e. drones) it could be better to use 3d laser scanners (which give a point cloud data which allows to map 3d environment) or RGBD cameras which allow to create 
 pointcloud with limited field of view and perform computer vision at the same time.
 
-To perform localisation and mapping, Sick 2D LMS1xx lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
-To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending.
+To perform localisation and mapping, Sick LMS1xx 2D Lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
+
 
 \subsubsection{Object Recognition and Graps point definition}
 To recognise objects, it is necessary to have their rgb image, which has to be captured by the camera. 
-To define grabbing point it is important to have the rgb data and pointcloud to perform shape 
+To define grabbing point it is important to have the rgb data and pointcloud to perform shape recognition. To meet both dependencies, it has been decided to use Realsense RGBD camera which has good implementation in Gazebo. Even though Realsense does not provide pointcloud data directly, it can be 
+computated from rgb image and depth image.
+
+To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending.
 
 \section{Autonomous driving}
 To aquire autonomous driving in indoor environment, system consisted of two main parts - localisation and mapping algorithm and motion planner algorithm.
@@ -390,7 +393,7 @@ Octomap was considered as an extension of the system to calculate the possibilit
 \end{figure}
 
 \section{Manipulator control}
-To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. 
+To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. TO BE CONTINUE...
 
 
 

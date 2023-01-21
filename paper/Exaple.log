@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  21 JAN 2023 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  21 JAN 2023 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -165,33 +165,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <img/navigation_scheme.png, id=11, 811.03pt x 333.245pt>
 File: img/navigation_scheme.png Graphic file (type png)
 <use img/navigation_scheme.png>
-Package pdftex.def Info: img/navigation_scheme.png  used on input line 373.
+Package pdftex.def Info: img/navigation_scheme.png  used on input line 376.
 (pdftex.def)             Requested size: 258.0pt x 106.01004pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 373--374
+Overfull \hbox (6.0pt too wide) in paragraph at lines 376--377
 [][] 
  []
 
 <img/global_local_planner.png, id=13, 685.56125pt x 449.68pt>
 File: img/global_local_planner.png Graphic file (type png)
 <use img/global_local_planner.png>
-Package pdftex.def Info: img/global_local_planner.png  used on input line 388.
+Package pdftex.def Info: img/global_local_planner.png  used on input line 391.
 (pdftex.def)             Requested size: 206.39685pt x 135.37848pt.
 [2 </home/marabir/catkin_ws/src/human-assistant/paper/img/navigation_scheme.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/global_local_planner.png>]
 <img/algorithm_no_problem.png, id=19, 603.25375pt x 41.15375pt>
 File: img/algorithm_no_problem.png Graphic file (type png)
 <use img/algorithm_no_problem.png>
-Package pdftex.def Info: img/algorithm_no_problem.png  used on input line 428.
+Package pdftex.def Info: img/algorithm_no_problem.png  used on input line 431.
 (pdftex.def)             Requested size: 258.0pt x 17.60031pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 428--429
+Overfull \hbox (6.0pt too wide) in paragraph at lines 431--432
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 473.
+(Font)              <8> on input line 476.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 473.
+(Font)              <6> on input line 476.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -215,7 +215,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,520b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (3 pages, 137160 bytes).
+Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (3 pages, 137414 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
