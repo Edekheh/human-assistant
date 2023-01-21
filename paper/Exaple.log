@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.31)  21 JAN 2023 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  21 JAN 2023 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex"
-(/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06> (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/IEEEtran.cls
+**/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex
+(/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/home/marabir/catkin_ws/src/human-assistant/paper/IEEEtran.cls
 Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -14,9 +14,9 @@ Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 \@IEEEtrantmpdimenB=\dimen135
 \@IEEEtrantmpcountA=\count167
 \@IEEEtrantmpcountB=\count168
-\@IEEEtrantmptoksA=\toks15
+\@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 366.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 210mm x 297mm (a4) paper.
@@ -89,80 +89,82 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen148
 \c@IEEEbiography=\count178
 \@IEEEtranrubishbin=\box45
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+\KV@toks@=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/sttools/stfloats.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
 \@dblbotnum=\count179
 \c@dblbotnumber=\count180
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count181
 \l__pdf_internal_box=\box46
-) (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux)
+) (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux)
 \openout1 = `Exaple.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
- (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 245.
+LaTeX Font Info:    ... okay on input line 245.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count182
 \scratchdimen=\dimen151
 \scratchbox=\box47
 \nofMPsegments=\count183
 \nofMParguments=\count184
-\everyMPshowfont=\toks17
+\everyMPshowfont=\toks16
 \MPscratchCnt=\count185
 \MPscratchDim=\dimen152
 \MPnumerator=\count186
 \makeMPintoPDFobject=\count187
-\everyMPtoPDFconversion=\toks18
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Underfull \hbox (badness 1515) in paragraph at lines 340--341
+Underfull \hbox (badness 1515) in paragraph at lines 341--342
 []\OT1/ptm/m/n/10 Sensor se-lec-tion in-volves con-sid-er-ing var-i-ous dif-fer-ent
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 344.
+(Font)              <7> on input line 345.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 344.
-[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <5> on input line 345.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -170,35 +172,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: img/navigation_scheme.png Graphic file (type png)
 <use img/navigation_scheme.png>
 Package pdftex.def Info: img/navigation_scheme.png  used on input line 374.
-(pdftex.def)             Requested size: 516.0pt x 212.02518pt.
+(pdftex.def)             Requested size: 258.0pt x 106.01004pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 374--375
+[][] 
+ []
+
 <img/global_local_planner.png, id=13, 685.56125pt x 449.68pt>
 File: img/global_local_planner.png Graphic file (type png)
 <use img/global_local_planner.png>
 Package pdftex.def Info: img/global_local_planner.png  used on input line 389.
 (pdftex.def)             Requested size: 206.39685pt x 135.37848pt.
- [2 </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/navigation_scheme.png> </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/global_local_planner.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 422.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+[2 </home/marabir/catkin_ws/src/human-assistant/paper/img/navigation_scheme.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/global_local_planner.png>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 424.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (2.40016pt too wide) in paragraph at lines 421--426
+Overfull \hbox (2.40016pt too wide) in paragraph at lines 423--428
 \OT1/pcr/m/n/8 # wget http://pjreddie.com/media/files/yolov3.weights 
  []
 
 <img/algorithm_no_problem.png, id=19, 603.25375pt x 41.15375pt>
 File: img/algorithm_no_problem.png Graphic file (type png)
 <use img/algorithm_no_problem.png>
-Package pdftex.def Info: img/algorithm_no_problem.png  used on input line 433.
+Package pdftex.def Info: img/algorithm_no_problem.png  used on input line 435.
 (pdftex.def)             Requested size: 258.0pt x 17.60031pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 433--434
+Overfull \hbox (6.0pt too wide) in paragraph at lines 435--436
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 478.
+(Font)              <8> on input line 480.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 478.
+(Font)              <6> on input line 480.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -210,17 +217,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/algorithm_no_problem.png>] (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux) ) 
+[3 </home/marabir/catkin_ws/src/human-assistant/paper/img/algorithm_no_problem.png>] (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux) ) 
 Here is how much of TeX's memory you used:
- 1987 strings out of 480608
- 33660 string characters out of 5903630
- 274972 words of memory out of 5000000
- 17890 multiletter control sequences out of 15000+600000
+ 2008 strings out of 481239
+ 33521 string characters out of 5920376
+ 272239 words of memory out of 5000000
+ 17282 multiletter control sequences out of 15000+600000
  565337 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,25p,607b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf" (3 pages, 149641 bytes).
+ 30i,8n,25p,577b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (3 pages, 149636 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

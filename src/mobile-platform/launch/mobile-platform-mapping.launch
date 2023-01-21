@@ -58,6 +58,7 @@
     <param name="use_action_for_goal" type="bool" value="true"/>
     <remap from="move_base"            to="/move_base"/>
     
+    
   
   
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">

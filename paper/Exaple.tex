@@ -29,6 +29,7 @@
 %
 \ifCLASSINFOpdf
   \usepackage[pdftex]{graphicx}
+  \usepackage{placeins}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
@@ -369,11 +370,10 @@ To aquire autonomous driving in indoor environment, system consisted of two main
 
 The structure of the system has been presented in Figure 1.
 
-\begin{figure*}[!t]
-  \centering
-  \includegraphics[width=\textwidth]{img/navigation_scheme.png}
+\begin{figure}[ht]
+  \includegraphics[width=0.5\textwidth]{img/navigation_scheme.png}
   \caption[navigation structure]{Autonomous driving system}
-\end{figure*}
+\end{figure}
 
 \subsection{Simultaneous Localisation and Mapping}
 To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was choosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
@@ -384,11 +384,13 @@ To move the platform in simulated environment, it has been decided to use \texti
 and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
 Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented. 
 
-\begin{figure}[!ht]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{img/global_local_planner.png}
   \caption[global and local path]{Goal position (red arrow), global path (red line) and local path (blue line)}
 \end{figure}
+\FloatBarrier
+
 
 \section{Manipulator control}
 To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools. \cite{MOVEIT} TO BE CONTINUE...
