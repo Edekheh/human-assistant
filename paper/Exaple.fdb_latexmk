@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1673970516 "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf" "Exaple" 1673970637
+["pdflatex"] 1674309448 "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf" "Exaple" 1674309448
   "/etc/texmf/web2c/texmf.cnf" 1668885732 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux" 1673970516 980 aa04720b73558c15949120d985056daf ""
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" 1673970637 20262 7f4e19f857f723eb4bb219c0b29ae39e ""
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux" 1674309448 1502 65435f25ea7eb3aa5192f45b8af9e34c ""
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" 1674309447 22525 0db67330eab3b70f7364c283289ef048 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -46,12 +46,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668885767 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668885796 8257833 1c23808aaee3476cd2a9e936c07cfaca ""
-  "Exaple.aux" 1673970516 980 aa04720b73558c15949120d985056daf "pdflatex"
-  "Exaple.tex" 1673970637 20262 7f4e19f857f723eb4bb219c0b29ae39e ""
-  "IEEEtran.cls" 1673969637 206055 8957f3898ac8d1f32997ffb5a0aa695d ""
+  "Exaple.aux" 1674309448 1502 65435f25ea7eb3aa5192f45b8af9e34c "pdflatex"
+  "Exaple.tex" 1674309447 22525 0db67330eab3b70f7364c283289ef048 ""
+  "IEEEtran.cls" 1674166568 206055 8957f3898ac8d1f32997ffb5a0aa695d ""
+  "img/navigation_scheme.png" 1674302474 45025 82f526fddc774d85763bde77241e32bb ""
   (generated)
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf"
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.log"
-  "Exaple.pdf"
   "Exaple.log"
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf"
+  "Exaple.pdf"
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.log"
   "Exaple.aux"

@@ -337,7 +337,27 @@ In this paper the challenges that were encountered during the implementation of 
 The results of experiments conducted to evaluate the performance of the whole-body-control approach were also presented and discussed.
 
 \subsection{Simulation environment and used components} 
-To perform integration and tests, Gazebo and Robot Operating System were choosen. Clearpath Dingo was used as a mobile platform and Panda Franka Emika was used as a manipulator. To perform localisation and mapping, lidar ..... and Intel Realsense RGBD camera were used.
+To perform integration and tests, Gazebo and Robot Operating System were choosen. Clearpath Dingo was used as a mobile platform and Panda Franka Emika was used as a manipulator. To perform localisation and mapping, Sick 2D LMS1xx lidar and Intel Realsense RGBD camera were used.pp[]. To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending. 
+
+\section{Autonomous driving}
+To aquire autonomous driving in indoor environment, system consisted of two main parts - localisation and mapping algorithm and motion planner algorithm.
+
+Structure of the system has been presented below.
+
+\begin{figure}[ht]
+  \includegraphics[width=0.5\textwidth]{img/navigation_scheme.png}
+  \caption[navigation structure]{Autonomous driving system}
+\end{figure}
+
+\subsection{Simultaneous Localisation and Mapping}
+To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was choosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
+As an odometry source, it has been decided to use odometry information given by the Gazebo simulator because of the most efficient way of getting odometry in terms of computation power needed performing simulation.
+
+\subsection{Motion planner}
+To move the platform in simulated environment, it has been decided to use \textit{move\_base} package with global planner \textit{NavfnROS} and local planner \textit{TrajectoryPlanner ROS}. \textit{NavfnROS} is an implementation of fast, interpolated navigation function used to create paths to the target position.  \textit{TrajectoryPlanner ROS} is a local planner with creates set of different trajectories with kinematic constraints
+and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
+Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented. 
+
 
 \section{YOLO algorithm}
 In this section YOLO algorithm was described. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
@@ -399,6 +419,9 @@ The authors would like to thank...
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
+
+\bibitem{RTABMAP}
+M. Labbé and F. Michaud, “RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation,” in Journal of Field Robotics, vol. 36, no. 2, pp. 416–446, 2019. 
 
 \bibitem{YOLO_ROS}
 M. Bjelonic "YOLO ROS: Real-Time Object Detection for ROS", URL: \url{https://github.com/leggedrobotics/darknet_ros}, 2018.
