@@ -61,6 +61,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/sttools/stfloats.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/sttools/stfloats.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def

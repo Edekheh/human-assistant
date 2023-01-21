@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.31)  21 JAN 2023 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.31)  21 JAN 2023 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -107,12 +107,16 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/sttools/stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
+\@dblbotnum=\count179
+\c@dblbotnumber=\count180
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count179
+\l__kernel_color_stack_int=\count181
 \l__pdf_internal_box=\box46
 ) (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux)
 \openout1 = `Exaple.aux'.
@@ -133,16 +137,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
 LaTeX Font Info:    ... okay on input line 244.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count180
+\scratchcounter=\count182
 \scratchdimen=\dimen151
 \scratchbox=\box47
-\nofMPsegments=\count181
-\nofMParguments=\count182
+\nofMPsegments=\count183
+\nofMParguments=\count184
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count183
+\MPscratchCnt=\count185
 \MPscratchDim=\dimen152
-\MPnumerator=\count184
-\makeMPintoPDFobject=\count185
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
 \everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -165,19 +169,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <img/navigation_scheme.png, id=11, 811.03pt x 333.245pt>
 File: img/navigation_scheme.png Graphic file (type png)
 <use img/navigation_scheme.png>
-Package pdftex.def Info: img/navigation_scheme.png  used on input line 373.
-(pdftex.def)             Requested size: 258.0pt x 106.01004pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 373--374
-[][] 
- []
-
+Package pdftex.def Info: img/navigation_scheme.png  used on input line 374.
+(pdftex.def)             Requested size: 516.0pt x 212.02518pt.
 <img/global_local_planner.png, id=13, 685.56125pt x 449.68pt>
 File: img/global_local_planner.png Graphic file (type png)
 <use img/global_local_planner.png>
-Package pdftex.def Info: img/global_local_planner.png  used on input line 388.
+Package pdftex.def Info: img/global_local_planner.png  used on input line 389.
 (pdftex.def)             Requested size: 206.39685pt x 135.37848pt.
-[2 </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/navigation_scheme.png> </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/global_local_planner.png>]
+ [2 </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/navigation_scheme.png> </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/global_local_planner.png>]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 422.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -211,19 +210,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
- </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/algorithm_no_problem.png>] (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux) ) 
+[3 </Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/img/algorithm_no_problem.png>] (/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux) ) 
 Here is how much of TeX's memory you used:
- 1959 strings out of 480608
- 33129 string characters out of 5903630
- 273305 words of memory out of 5000000
- 17867 multiletter control sequences out of 15000+600000
+ 1984 strings out of 480608
+ 33628 string characters out of 5903630
+ 274969 words of memory out of 5000000
+ 17888 multiletter control sequences out of 15000+600000
  564259 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,550b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf" (3 pages, 148761 bytes).
+Output written on "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf" (3 pages, 148797 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

@@ -200,7 +200,7 @@
 
 
 
-%\usepackage{stfloats}
+\usepackage{stfloats}
 % stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
 % the ability to do double column floats at the bottom of the page as well
 % as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
@@ -367,12 +367,13 @@ To allow robot to see objects from manipulator perspective, one Realsense camera
 \section{Autonomous driving}
 To aquire autonomous driving in indoor environment, system consisted of two main parts - localisation and mapping algorithm and motion planner algorithm.
 
-Structure of the system has been presented below.
+The structure of the system has been presented in Figure 1.
 
-\begin{figure}[ht]
-  \includegraphics[width=0.5\textwidth]{img/navigation_scheme.png}
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{img/navigation_scheme.png}
   \caption[navigation structure]{Autonomous driving system}
-\end{figure}
+\end{figure*}
 
 \subsection{Simultaneous Localisation and Mapping}
 To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was choosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
@@ -383,7 +384,7 @@ To move the platform in simulated environment, it has been decided to use \texti
 and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
 Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented. 
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=0.4\textwidth]{img/global_local_planner.png}
   \caption[global and local path]{Goal position (red arrow), global path (red line) and local path (blue line)}
@@ -393,9 +394,8 @@ Octomap was considered as an extension of the system to calculate the possibilit
 To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. TO BE CONTINUE...
 
 
-
-\section{YOLO algorithm}
-In this section YOLO algorithm was described. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
+\section{Object recognition}
+In this section YOLO algorithm was described, which was used for object recogniton task. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
 
 \subsection{Algorithm description}
 YOLO (You Only Look Once) is a real-time object detection algorithm. YOLO contains single convolutional neural network (CNN) that is able to detect objects in an image or video stream in real-time. 
