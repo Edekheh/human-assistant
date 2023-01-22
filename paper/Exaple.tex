@@ -440,13 +440,20 @@ For the purpose of this experiment, let assume that the approximate location of 
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{img/algorithm_no_problem.png}
+  \includegraphics[width=0.5\textwidth]{img/algorithm_no_problem1.png}
   \caption{Sequence of achieving the task}
 \end{figure}
 
 Grabbing action should also be extended to measure the distance from the base\_link of the object and execute the base movement if it is necessary. To maintain all states and autonomy, the state node has been proposed with configuration showed below.
 
-HERE GRAPH OF STATE CONTROLLER WHICH I AM DRAWING.
+Autonomy actions would be maintained by \textit{state\_controller} node which could have structure presented below.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/states.png}
+  \caption[states controller structure]{States controller concept}
+\end{figure}
+\FloatBarrier
+
 
 
 \section{Conclusion}
