@@ -458,8 +458,9 @@ Autonomy actions would be maintained by \textit{state\_controller} node which co
 During developing whole system, many diffculties occured. Implementation problems prevented completing the task of creating whole-body-motion control algorithm due to some significant unresolved errors.
 
 \subsection{Integrating Dingo and Panda}
-
-
+During integrating mobile robot Dingo with robotic arm Panda first step was to create common \textit{URDF} file to connect both robots together. However, for the simulation purposes, all movable parts have to be described by \textit{Hardware\_Interface}
+and placed in common set. Because of the written drivers, with checking number of joints it was impossible to run the simulation. After changing the condition values, it turned out that Gazebo simulator is not able to control more sets of \textit{Hardware\_Joints}
+than one because of the namespace conflict. Probably it could be repaired by rewritting part of the Panda driver, but it was too time consuming to perform succesfully.
 
 \section{Conclusion}
 The conclusion goes here.
