@@ -393,7 +393,7 @@ Octomap was considered as an extension of the system to calculate the possibilit
 
 
 \section{Manipulator control}
-To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools. \cite{MOVEIT}
+To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools \cite{MOVEIT}.
 MoveIt uses IKFast the Roboti Kinematics Compiler which is a powerful inverse kinematics solver. 
 
 \section{Object recognition}
@@ -426,6 +426,14 @@ After dowladnig weights the package can be run by a following command:
 \shellcmd{roslaunch darknet\_ros darknet\_ros.launch}
 In order to integrate the package with the project there was a need to modify ros.yml file and change camera\_reading topic to \url{/camera/color/image_raw}.
 
+\subsection{Object detection results}
+Integrated tiny version YOLO algorytm works corretly under certain conditions. The obect must be specified in the dataset. What is more, the background and the lightning conditions should be appropriate. The tiny vetsion of the algorythm uses less computing power, but it is less accurate in its predictions. The result of detecting an object is shown in a figure below. 
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.2\textwidth]{img/Yolo_banana.jpeg}
+  \caption{Detecting a banana using YOLO algorithm.}
+\end{figure}
 
 \section{Whole body motion control algorithm}
 For the purpose of this experiment, let assume that the approximate location of the desired object is known and it has been added to the map as a label. Then, next steps for the algorithm are as presented below.
