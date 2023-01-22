@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1674382363 "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex" "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf" "Exaple" 1674382364
-  "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux" 1674382364 2690 fadbf011735a64cfcf3a44c8040efbfb ""
-  "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex" 1674382361 27685 0a539902bbdfc22b6d5768ede3da0530 ""
+["pdflatex"] 1674382660 "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex" "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf" "Exaple" 1674382661
+  "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.aux" 1674382661 2690 fadbf011735a64cfcf3a44c8040efbfb ""
+  "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.tex" 1674382658 27688 399e9b814bce2cdd9b81841799941075 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -52,8 +52,8 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1617197403 2432454 0c208b3a6fddad496ea1300c8ed1b57c ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "Exaple.aux" 1674382364 2690 fadbf011735a64cfcf3a44c8040efbfb "pdflatex"
-  "Exaple.tex" 1674382361 27685 0a539902bbdfc22b6d5768ede3da0530 ""
+  "Exaple.aux" 1674382661 2690 fadbf011735a64cfcf3a44c8040efbfb "pdflatex"
+  "Exaple.tex" 1674382658 27688 399e9b814bce2cdd9b81841799941075 ""
   "IEEEtran.cls" 1673428364 206055 8957f3898ac8d1f32997ffb5a0aa695d ""
   "img/Yolo_banana.jpeg" 1674381715 20550 baf389c5706005a8bcec10a475827d43 ""
   "img/algorithm_no_problem.png" 1674317106 8954 3e89468ecc54efc94f34782756805a10 ""
@@ -61,7 +61,7 @@
   "img/navigation_scheme.png" 1674317106 45025 82f526fddc774d85763bde77241e32bb ""
   (generated)
   "Exaple.log"
+  "Exaple.aux"
+  "Exaple.pdf"
   "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.pdf"
   "/Users/mateuszwitka-jezewski/Documents/Projekt Badawczy/human-assistant/paper/Exaple.log"
-  "Exaple.pdf"
-  "Exaple.aux"
