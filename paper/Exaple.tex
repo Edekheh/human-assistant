@@ -435,6 +435,38 @@ Integrated tiny version YOLO algorithm works correctly under certain conditions.
   \caption{Detecting a banana using YOLO algorithm.}
 \end{figure}
 
+\section{Grasp detection}
+This section describes the problems our team encountered when implementing the grasp detection algorithms into the project.
+
+\subsection{Dex-Net and GQC Neural Networks}
+Dex-Net and GQCNN packages are well suited for both Python, and ROS environment. While Dex-Net focuses on generating datasets of grasp robustness, the GQCNN is based on the Grasp Quality Convolutional Neural Networks which finds the best grasp from a group of candidates. Structure of this system has been shown below.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.47\textwidth]{img/gqcnn.png}
+  \caption{Structure of Grasp Quality Concolutional Neural Network}
+\end{figure}
+
+Dex-Net is the library that has seen the most progress during the tests. It was run and tested using a high-level Python programming language. Unfortunately, though, issues occurred during its integration into the ROS environment.
+
+\subsection{MoveIt Deep Grasps}
+MoveIt Deep Grasps is a ROS package developed by Picknik.ai. It is a more advanced version of the MoveIt Grasps library. The package uses three tools:
+
+\begin{itemize}
+\item Grasp Pose Detection
+\item Dex-Net
+\item MoveIt Task Constructor
+\end{itemize}
+
+The MoveIt Task Constructor is used to ensure ROS communication with the decision-making system, which can be either Dex-Net or Grasp Pose Detection package. Both libraries must be installed on the computer before installing the ROS MoveIt Deep Grasps package.
+
+During the installation process, many problems have occurred. With time, most of them have been resolved, however two issues could not have been fixed. It revolved around the compatibility of the OpenCV version, used by MoveIt Deep Grasps. Another error that was not resolved was the absence of certain files in the package itself.
+
+\subsection{MoveIt Grasps}
+MoveIt Grasps is yet another package designed for a Robot Operating System, maintained by the aforementioned Picknik.ai. Its main task is to generate grip points for simple objects, such as blocks and cylinders. This package is continuation of the MoveIt pick and place library. It is also the most popular package for grasp detection.
+
+Attempts of installing the package have failed due to file compatibility issues. Extensive research has shown that due to MoveIt changes made in 2021, the package could no longer be supported. As a result, it became impossible to use it in our version of software.
+
 \section{Whole body motion control algorithm}
 For the purpose of this experiment, let assume that the approximate location of the desired object is known and it has been added to the map as a label. Then, next steps for the algorithm are as presented below.
 
