@@ -482,6 +482,11 @@ MoveIt Grasps is yet another package designed for a Robot Operating System, main
 
 Attempts of installing the package have failed due to file compatibility issues. Extensive research has shown that due to MoveIt changes made in 2021, the package could no longer be supported. As a result, it became impossible to use it in our version of software.
 
+\subsection{Conclusion}
+The task of determining a grip point has not been achieved. There are several reasons for this situation. The first may have been little experience with tools such as dex-net along with little experience of ROS. Another reason is the fact that there are few tools available dedicated for the grasp detection. Moreover, not only are such tools scarce, but most of them ceased to be supported at least a few years ago.
+
+Creating such a tool in a small group and with such a limited amount of time is very difficult. This is due to the need to collect a large dataset of images of objects, and to create an entire algorithm based on neural networks. Such time was in short supply due to the diversion of our efforts to solve problems with publicly available tools. 
+
 \section{Whole body motion control algorithm}
 For the purpose of this experiment, let assume that the approximate location of the desired object is known and it has been added to the map as a label. Then, next steps for the algorithm are as presented below.
 
