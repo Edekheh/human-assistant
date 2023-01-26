@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1674747994 "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf" "Exaple" 1674747995
+["pdflatex"] 1674748240 "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf" "Exaple" 1674748240
   "/etc/texmf/web2c/texmf.cnf" 1668885732 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux" 1674747995 4138 b7e2a5558b4e6148b3f635c3f3e3aedd ""
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" 1674747993 34997 ce5627efcbb18e4bf6072af93ed63f34 ""
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux" 1674748240 4138 b7e2a5558b4e6148b3f635c3f3e3aedd ""
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.tex" 1674748240 34997 0b9ee784c0cb346965b4b4f4a06d8fe5 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -53,8 +53,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668885767 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668885796 8257833 1c23808aaee3476cd2a9e936c07cfaca ""
-  "Exaple.aux" 1674747995 4138 b7e2a5558b4e6148b3f635c3f3e3aedd "pdflatex"
-  "Exaple.tex" 1674747993 34997 ce5627efcbb18e4bf6072af93ed63f34 ""
+  "Exaple.aux" 1674748240 4138 b7e2a5558b4e6148b3f635c3f3e3aedd "pdflatex"
+  "Exaple.tex" 1674748240 34997 0b9ee784c0cb346965b4b4f4a06d8fe5 ""
   "IEEEtran.cls" 1674328642 206055 8957f3898ac8d1f32997ffb5a0aa695d ""
   "img/Yolo_banana.jpeg" 1674407064 20550 baf389c5706005a8bcec10a475827d43 ""
   "img/algorithm_no_problem1.png" 1674419648 13081 a7482ef07e7bafdfb52840308711f461 ""
@@ -65,8 +65,8 @@
   "img/robot.png" 1674739890 20578 3179e17d3eddb5824460f39c391ccce0 ""
   "img/states.png" 1674419542 83214 abb8201fd2364345fa30d605e1ac593f ""
   (generated)
+  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.log"
+  "Exaple.pdf"
+  "Exaple.log"
   "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf"
   "Exaple.aux"
-  "/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.log"
-  "Exaple.log"
-  "Exaple.pdf"
