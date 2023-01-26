@@ -377,7 +377,7 @@ The structure of the system has been presented in Figure 1.
 
 \subsection{Simultaneous Localisation and Mapping}
 To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was choosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
-As an odometry source, it has been decided to use odometry information given by the Gazebo simulator because of the most efficient way of getting odometry in terms of computation power needed performing simulation.
+As an odometry source, it has been decided to use odometry information given by the Gazebo simulator because of the most efficient way of getting odometry in terms of computation power needed performing simulation in comparison to visual or icp odometry algorithms.
 
 \subsection{Motion planner}
 To move the platform in simulated environment, it has been decided to use \textit{move\_base} package with global planner \textit{NavfnROS} and local planner \textit{TrajectoryPlanner ROS}. \textit{NavfnROS} is an implementation of fast, interpolated navigation function used to create paths to the target position.  \textit{TrajectoryPlanner ROS} is a local planner with creates set of different trajectories with kinematic constraints
@@ -394,7 +394,18 @@ Octomap was considered as an extension of the system to calculate the possibilit
 
 \section{Manipulator control}
 To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools \cite{MOVEIT}.
-MoveIt uses IKFast the Roboti Kinematics Compiler which is a powerful inverse kinematics solver. 
+MoveIt uses IKFast the Roboti Kinematics Compiler which is a powerful inverse kinematics solver. To perform grip an object action, it needs information such as 
+data below \cite{grapsmessage}
+\begin{itemize}
+  \item trajectory\_msgs/JointTrajectory pre\_grasp\_posture - internal posture of the hand for the pre-grasp only positions are used
+  \item trajectory\_msgs/JointTrajectory grasp\_posture - internal posture of the hand for the grasp
+  positions and efforts are used
+  \item geometry\_msgs/PoseStamped grasp\_pose - position of the end-effector for the grasp (parent link of the effector)
+  \item float64 grasp\_quality - estimated probability of success for this grasp
+  \item GripperTranslation pre\_grasp\_approach - approach direction to take before picking an object
+  \item GripperTranslation post\_grasp\_retreat - retreat direction to take after a grasp has been completed (object is taken)
+  \item float32 max\_contact\_force - maximum contact force to use while grasping
+\end{itemize} 
 
 \section{Object recognition}
 In this section YOLO algorithm was described, which was used for object recogniton task. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
@@ -491,11 +502,31 @@ During developing whole system, many diffculties occured. Implementation problem
 
 \subsection{Integrating Dingo and Panda}
 During integrating mobile robot Dingo with robotic arm Panda first step was to create common \textit{URDF} file to connect both robots together. However, for the simulation purposes, all movable parts have to be described by \textit{Hardware\_Interface}
-and placed in common set. Because of the written drivers, with checking number of joints it was impossible to run the simulation. After changing the condition values, it turned out that Gazebo simulator is not able to control more sets of \textit{Hardware\_Joints}
-than one because of the namespace conflict. Probably it could be repaired by rewritting part of the Panda driver, but it was too time consuming to perform succesfully.
+and placed in common set. At the begginig, the \textit{tf\_tree} was broken, due to not all links and joints beeing created. Because of the written drivers, with checking number of joints it was impossible to run the simulation. After changing the condition values which are responsible for checking the amount of joints to register to the \textit{ros\_control} package, it turned out that Gazebo simulator is not able to control more sets of \textit{Hardware\_Joints}
+than one, probably because of the namespace conflict of Dingo and Panda robots. Probably it could be repaired by rewritting part of the Panda driver which use Hardware Joints interface and to separate these joints from joints used by \textit{move\_base}, but it was too time consuming to perform succesfully.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/image_Cropped.png}
+  \caption[broken tf tree]{Broken tf tree without panda links and joints other than base and gripper}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.3\textwidth]{img/robot.png}
+  \caption[robot in gazebo]{Generated in gazebo robot model with broken tf tree}
+\end{figure}
+\FloatBarrier
+
+After some work and rewritting URDF files to provide connectivity and proper parametrisation, full model presented in Gazebo was achieved, but due to drivers issue mentioned above
+gazebo simulator dies after launching full mode with message \break \texttt{Segmentation fault (core dumped)} \break
+\texttt{gazebo-5 process has died pid 8354, exit code 139}
 
 \section{Conclusion}
-The presented algorithm for the whole-body-control approach might be useful in various robotic systems. However, its implementation using Robot Operating System proved to be problematic. Various integration problems indicate the selection of another technological stack. Further research is needed to fully explore the potential of this approach.
+The presented algorithm for the whole-body-control approach might be useful in various robotic systems. However, its implementation using Robot Operating System proved to be problematic especially with the newest distribution of ROS and Ubuntu. 
+Various integration problems indicate the selection of another technological stack. Further research is needed to fully explore the potential of this approach and implement the cost function for arm and mobile base simultaneous control in terms of energy optimization.
+With longer time horizon, rewritting presented algorithms could be performed to allow them operate with currently available versions of libraries needed, but in therms of quick implementation and develop the algorithm, using older and better debugged versions is worth considering, but would not be a solution because of the necessary features which have been brought up in last versions. 
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
@@ -532,6 +563,9 @@ M. Labbé and F. Michaud, “RTAB-Map as an Open-Source Lidar and Visual SLAM Li
 
 \bibitem{MOVEIT}
 David Coleman, Ioan A. Șucan, Sachin Chitta, Nikolaus Correll, Reducing the Barrier to Entry of Complex Robotic Software: a MoveIt! Case Study, Journal of Software Engineering for Robotics, 5(1):3–16, May 2014. doi: 10.6092/JOSER\_2014\_05\_01\_p3.
+
+\bibitem{grapsmessage}
+\url{http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/Grasp.html}
 
 \bibitem{YOLO_ROS}
 M. Bjelonic "YOLO ROS: Real-Time Object Detection for ROS", URL: \url{https://github.com/leggedrobotics/darknet_ros}, 2018.
