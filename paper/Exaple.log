@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  26 JAN 2023 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.19)  26 JAN 2023 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -184,99 +184,100 @@ File: img/global_local_planner.png Graphic file (type png)
 Package pdftex.def Info: img/global_local_planner.png  used on input line 389.
 (pdftex.def)             Requested size: 206.39685pt x 135.37848pt.
 [2 </home/marabir/catkin_ws/src/human-assistant/paper/img/navigation_scheme.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/global_local_planner.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 435.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 439.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (2.40016pt too wide) in paragraph at lines 434--439
+Overfull \hbox (2.40016pt too wide) in paragraph at lines 438--443
 \OT1/pcr/m/n/8 # wget http://pjreddie.com/media/files/yolov3.weights 
  []
 
 <img/Yolo_banana.jpeg, id=19, 178.6675pt x 145.54375pt>
 File: img/Yolo_banana.jpeg Graphic file (type jpg)
 <use img/Yolo_banana.jpeg>
-Package pdftex.def Info: img/Yolo_banana.jpeg  used on input line 445.
+Package pdftex.def Info: img/Yolo_banana.jpeg  used on input line 449.
 (pdftex.def)             Requested size: 103.19843pt x 84.06676pt.
 <img/gqcnn.png, id=20, 832.10875pt x 251.94125pt>
 File: img/gqcnn.png Graphic file (type png)
 <use img/gqcnn.png>
-Package pdftex.def Info: img/gqcnn.png  used on input line 457.
+Package pdftex.def Info: img/gqcnn.png  used on input line 461.
 (pdftex.def)             Requested size: 242.52063pt x 73.43013pt.
 [3 </home/marabir/catkin_ws/src/human-assistant/paper/img/Yolo_banana.jpeg> </home/marabir/catkin_ws/src/human-assistant/paper/img/gqcnn.png>]
 <img/algorithm_no_problem1.png, id=26, 643.40375pt x 61.22874pt>
 File: img/algorithm_no_problem1.png Graphic file (type png)
 <use img/algorithm_no_problem1.png>
-Package pdftex.def Info: img/algorithm_no_problem1.png  used on input line 486.
+Package pdftex.def Info: img/algorithm_no_problem1.png  used on input line 490.
 (pdftex.def)             Requested size: 258.0pt x 24.5527pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 486--487
+Overfull \hbox (6.0pt too wide) in paragraph at lines 490--491
  [][] 
  []
 
 <img/states.png, id=27, 871.255pt x 741.77126pt>
 File: img/states.png Graphic file (type png)
 <use img/states.png>
-Package pdftex.def Info: img/states.png  used on input line 495.
+Package pdftex.def Info: img/states.png  used on input line 499.
 (pdftex.def)             Requested size: 258.0pt x 219.64688pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 495--496
+Overfull \hbox (6.0pt too wide) in paragraph at lines 499--500
  [][] 
  []
 
 <img/image_Cropped.png, id=28, 580.1675pt x 432.61626pt>
 File: img/image_Cropped.png Graphic file (type png)
 <use img/image_Cropped.png>
-Package pdftex.def Info: img/image_Cropped.png  used on input line 510.
+Package pdftex.def Info: img/image_Cropped.png  used on input line 514.
 (pdftex.def)             Requested size: 258.0pt x 192.3849pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 510--511
+Overfull \hbox (6.0pt too wide) in paragraph at lines 514--515
  [][] 
  []
 
-<img/robot.png, id=29, 381.425pt x 325.215pt>
+[4 </home/marabir/catkin_ws/src/human-assistant/paper/img/algorithm_no_problem1.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/states.png>]
+<img/robot.png, id=34, 381.425pt x 325.215pt>
 File: img/robot.png Graphic file (type png)
 <use img/robot.png>
-Package pdftex.def Info: img/robot.png  used on input line 517.
+Package pdftex.def Info: img/robot.png  used on input line 521.
 (pdftex.def)             Requested size: 154.80157pt x 131.98924pt.
-[4 </home/marabir/catkin_ws/src/human-assistant/paper/img/algorithm_no_problem1.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/states.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/image_Cropped.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 []\OT1/ptm/m/n/10 After some work and rewrit-ting URDF files to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/ptm/m/n/10 pro-vide con-nec-tiv-ity and proper parametri-sa-tion, full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/ptm/m/n/10 model pre-sented in Gazebo was achieved, but due
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/ptm/m/n/10 to drivers is-sue men-tioned above gazebo sim-u-la-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/ptm/m/n/10 dies af-ter launch-ing full mode with mes-sage 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/pcr/m/n/10 Segmentation fault (core dumped) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 \OT1/pcr/m/n/10 gazebo-5 process has died pid 8354, exit
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 565.
+(Font)              <8> on input line 572.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 565.
+(Font)              <6> on input line 572.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -288,19 +289,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
- </home/marabir/catkin_ws/src/human-assistant/paper/img/robot.png (PNG copy)>] (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux) ) 
+[5 </home/marabir/catkin_ws/src/human-assistant/paper/img/image_Cropped.png> </home/marabir/catkin_ws/src/human-assistant/paper/img/robot.png (PNG copy)>] (/home/marabir/catkin_ws/src/human-assistant/paper/Exaple.aux) ) 
 Here is how much of TeX's memory you used:
- 2041 strings out of 481239
- 34112 string characters out of 5920376
- 272242 words of memory out of 5000000
- 17308 multiletter control sequences out of 15000+600000
+ 2042 strings out of 481239
+ 34121 string characters out of 5920376
+ 272245 words of memory out of 5000000
+ 17309 multiletter control sequences out of 15000+600000
  565636 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,559b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (5 pages, 354302 bytes).
+Output written on /home/marabir/catkin_ws/src/human-assistant/paper/Exaple.pdf (5 pages, 354805 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream

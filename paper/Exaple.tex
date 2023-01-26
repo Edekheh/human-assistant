@@ -391,6 +391,10 @@ Octomap was considered as an extension of the system to calculate the possibilit
 \end{figure}
 \FloatBarrier
 
+\subsection{Environment information for robotic arm planner}
+To safely operate with robotic arm, it is important to gain the knowledge about the surrounding, which can be performed alone with camera mounted on the arm or during mobile platform mapping.
+It has been decided to use the second approach and use gathered point clouds to create OctoMap which is a 3D occupancy grid mapping. \cite{octomap}. Octomap can be used as obstacles map for MoveIt planner for Panda arm in grasping phase.
+
 
 \section{Manipulator control}
 To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools \cite{MOVEIT}.
@@ -560,6 +564,9 @@ The authors would like to thank...
 
 \bibitem{RTABMAP}
 M. Labbé and F. Michaud, “RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation,” in Journal of Field Robotics, vol. 36, no. 2, pp. 416–446, 2019. 
+
+\bibitem{octomap}
+http://wiki.ros.org/octomap
 
 \bibitem{MOVEIT}
 David Coleman, Ioan A. Șucan, Sachin Chitta, Nikolaus Correll, Reducing the Barrier to Entry of Complex Robotic Software: a MoveIt! Case Study, Journal of Software Engineering for Robotics, 5(1):3–16, May 2014. doi: 10.6092/JOSER\_2014\_05\_01\_p3.
