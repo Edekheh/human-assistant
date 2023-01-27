@@ -348,22 +348,22 @@ Four main subtasks were:
   \item Grabbing
 \end{itemize}
 
-First three tasks are essential in term of sensor selection, because grabbing alone could be performed based on \textit{a priori} gained data. Also, sensors which are commonly used to acquire Object Recognition and Grasp point definition are similar so they will be present in common subsection.
+First three tasks are essential in term of sensor selection, because grabbing alone could be performed based on \textit{a priori} gained data. Also, sensors which are commonly used to acquire object recognition and grasp point definition are similar so they will be present in common subsection.
 
 \subsubsection{Localisation and mapping}
-Localization and mapping is crucial when it comes to going through the environment and there are three approaches. First is using 2d lidar sensor, which gives information about obstacles on 2d plane. It is efficient and easy to implement and in  singular-level buildings and without 
+Localization and mapping is crucial when it comes to going through the environment and there are three approaches. The first is using 2d lidar sensor, which gives information about obstacles on 2d plane. It is efficient and easy to implement and in  singular-level buildings and without 
 ability to go under the obstacles - completely adequate. If we would like to allow robot to go over (i.e. drones) it could be better to use 3d laser scanners (which give a point cloud data which allows to map 3d environment) or RGBD cameras which allow to create 
-pointcloud with limited field of view and perform computer vision at the same time.
+point cloud with limited field of view and perform computer vision at the same time.
 
-To perform localization and mapping, Sick LMS1xx 2D Lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
+To perform localization and mapping, Sick LMS1xx 2D Lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d point cloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
 
 
 \subsubsection{Object Recognition and Graps point definition}
 To recognize objects, it is necessary to have their rgb image, which has to be captured by the camera. 
-To define grabbing point it is important to have the rgb data and pointcloud to perform shape recognition. To meet both dependencies, it has been decided to use Realsense RGBD camera which has good implementation in Gazebo. Even though Realsense does not provide pointcloud data directly, it can be 
+To define grabbing point it is important to have the rgb data and point cloud to perform shape recognition. To meet both dependencies, it has been decided to use Realsense RGBD camera which has good implementation in Gazebo. Even though Realsense does not provide pointcloud data directly, it can be 
 computed from rgb image and depth image.
 
-To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending.
+To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector's ending.
 
 \section{Autonomous driving}
 To aquire autonomous driving in indoor environment, system consisted of two main parts - localization and mapping algorithm and motion planner algorithm.
@@ -376,12 +376,12 @@ The structure of the system has been presented in Figure 1.
 \end{figure}
 
 \subsection{Simultaneous Localisation and Mapping}
-To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was chosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
+To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was chosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d point cloud presenting the surrounding environment. 
 As an odometry source, it has been decided to use odometry information given by the Gazebo simulator because of the most efficient way of getting odometry in terms of computation power needed performing simulation in comparison to visual or icp odometry algorithms.
 
 \subsection{Motion planner}
-To move the platform in simulated environment, it has been decided to use \textit{move\_base} package with global planner \textit{NavfnROS} and local planner \textit{TrajectoryPlanner ROS}. \textit{NavfnROS} is an implementation of fast, interpolated navigation function used to create paths to the target position.  \textit{TrajectoryPlanner ROS} is a local planner with creates set of different trajectories with kinematic constraints
-and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
+To move the platform in simulated environment, it has been decided to use \textit{move\_base} package with global planner \textit{NavfnROS} and local planner \textit{TrajectoryPlanner ROS}. \textit{NavfnROS} is an implementation of fast, interpolated navigation function used to create paths to the target position.  \textit{TrajectoryPlanner ROS} is a local planner which creates set of different trajectories with kinematic constraints
+and scores them in terms of how close they are to the created global path. Local plan with the highest score is sent to the base controller as a \textit{geometry message}.
 Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented as a part of navigation pipeline.
 
 \begin{figure}[ht]
@@ -392,7 +392,7 @@ Octomap was considered as an extension of the system to calculate the possibilit
 \FloatBarrier
 
 \subsection{Environment information for robotic arm planner}
-To safely operate with robotic arm, it is important to gain the knowledge about the surrounding, which can be performed alone with camera mounted on the arm or during mobile platform mapping.
+To safely operate with robotic arm, it is important to gain the knowledge about the surroundings, which can be performed alone with camera mounted on the arm or during mobile platform mapping.
 It has been decided to use the second approach and use gathered point clouds to create OctoMap which is a 3D occupancy grid mapping. \cite{octomap}. Octomap can be used as obstacles map for MoveIt planner for Panda arm in grasping phase.
 
 
@@ -443,7 +443,7 @@ YOLO algorithm used in the project is trained on COCO dataset. Based on that dat
 \subsection{Installation and integration}
 To run YOLO object detection package OpenCV and boost libraries are needed. Also, before running YOLO algorithm pretrained weights should be downloaded. There are two possible options: weights for YOLO tiny and regular weights. Weights for YOLO tiny are used in smaller model, which is substantially faster, but less accurate. The weights can be downloaded by running a command:
 \shellcmd{wget http://pjreddie.com/media/files/yolov3.weights}
-After dowladnig weights the package can be run by a following command:
+After downloading weights the package can be run by a following command:
 \shellcmd{roslaunch darknet\_ros darknet\_ros.launch}
 In order to integrate the package with the project there was a need to modify ros.yml file and change camera\_reading topic to \url{/camera/color/image_raw}.
 
