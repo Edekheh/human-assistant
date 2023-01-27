@@ -329,44 +329,44 @@ The whole-body control approach is distinct from traditional control methods, wh
 
 This approach allows the robot to achieve a greater degree of flexibility and versatility in its movements. Also, it enables the possibility to perform more complicated pick and place tasks.
 
-To implement a whole-body-control algorithm there was a need for the integration of various sub-systems. A vision system with the ability to detect and distinguish objects was necessary. For this purpose, the presented result uses the YOLO algorithm. To perform a grasping action in a pick and place task Dex-Net algorithm was used. What is more to define the robot's position LiDAR sensor and RGBD camera were integrated. 
+To implement a whole-body-control algorithm there was a need for the integration of various sub-systems. A vision system with the ability to detect and distinguish objects was necessary. For this purpose, the presented result uses the YOLO algorithm. To perform a grasping action in a pick and place task Dex-Net algorithm was used. What is more, to define the robot's position LiDAR sensor and RGBD camera were integrated. 
 
-In this paper the challenges that were encountered during the implementation of the approach and the solutions that were developed to overcome them were described. 
+In this paper, the challenges that were encountered during the implementation of the approach and the solutions that were developed to overcome them were described. 
 The results of experiments conducted to evaluate the performance of the whole-body-control approach were also presented and discussed.
 
 \subsection{Simulation environment and robots used in experiment} 
-To perform integration and tests, Gazebo and Robot Operating System were choosen. As a holonomic mobile platform Clearpath Dingo robot has been used. As a manipulator with 7 DoF,  to provide wide range of possible movements Panda Franka Emika has been choosen.
+To perform integration and tests, Gazebo and Robot Operating System were chosen. As a holonomic mobile platform Clearpath Dingo robot has been used. As a manipulator with 7 DoF,  to provide wide range of possible movements Panda Franka Emika has been chosen.
 
 \subsection{Sensor selection}
-Sensor selection involves considering various different aproaches for subtasks needed to achieve main goal.
+Sensor selection involves considering various different approaches for subtasks needed to achieve main goal.
 
 Four main subtasks were:
 \begin{itemize}
   \item Localization and mapping
   \item Object Recognition
-  \item Graps point definition
+  \item Grasp point definition
   \item Grabbing
 \end{itemize}
 
-First three tasks are essential in term of sensor selection, because grabbing alone could be performed based on \textit{a priori} gained data. Also, sensors which are commonly used to aquire Object Recognition and Graps point definition are simmilar so they will be present in common subsection.
+First three tasks are essential in term of sensor selection, because grabbing alone could be performed based on \textit{a priori} gained data. Also, sensors which are commonly used to acquire Object Recognition and Grasp point definition are similar so they will be present in common subsection.
 
 \subsubsection{Localisation and mapping}
-Localisation and mapping is crucial when it comes to going through the environment and there are three approaches. First is using 2d lidar sensor, which gives information about obstacles on 2d plane. It is efficient and easy to implement and in  singular-level buildings and without 
+Localization and mapping is crucial when it comes to going through the environment and there are three approaches. First is using 2d lidar sensor, which gives information about obstacles on 2d plane. It is efficient and easy to implement and in  singular-level buildings and without 
 ability to go under the obstacles - completely adequate. If we would like to allow robot to go over (i.e. drones) it could be better to use 3d laser scanners (which give a point cloud data which allows to map 3d environment) or RGBD cameras which allow to create 
 pointcloud with limited field of view and perform computer vision at the same time.
 
-To perform localisation and mapping, Sick LMS1xx 2D Lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
+To perform localization and mapping, Sick LMS1xx 2D Lidar and Intel Realsense RGBD camera were used as a source of both 2D laser scan information and 3d pointcloud and rgb image. It provides possibility of using visual odometry to calculate difference in robot's pose i
 
 
 \subsubsection{Object Recognition and Graps point definition}
-To recognise objects, it is necessary to have their rgb image, which has to be captured by the camera. 
+To recognize objects, it is necessary to have their rgb image, which has to be captured by the camera. 
 To define grabbing point it is important to have the rgb data and pointcloud to perform shape recognition. To meet both dependencies, it has been decided to use Realsense RGBD camera which has good implementation in Gazebo. Even though Realsense does not provide pointcloud data directly, it can be 
-computated from rgb image and depth image.
+computed from rgb image and depth image.
 
 To allow robot to see objects from manipulator perspective, one Realsense camera was placed close to the efector ending.
 
 \section{Autonomous driving}
-To aquire autonomous driving in indoor environment, system consisted of two main parts - localisation and mapping algorithm and motion planner algorithm.
+To aquire autonomous driving in indoor environment, system consisted of two main parts - localization and mapping algorithm and motion planner algorithm.
 
 The structure of the system has been presented in Figure 1.
 
@@ -376,7 +376,7 @@ The structure of the system has been presented in Figure 1.
 \end{figure}
 
 \subsection{Simultaneous Localisation and Mapping}
-To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was choosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
+To achieve mapping and localisation for mobile platform, RTABMAP (Real Time appearance Based Mapping) \cite{RTABMAP} was chosen as a effective algorithm to implement 3D slam with loop closure detection. It uses lidar \textit{LaserScan} messages from Sick lidar and rgb image and depth image from Realsense camera to create 2d grid map used for navigation and 3d pointcloud presenting the surrounding environment. 
 As an odometry source, it has been decided to use odometry information given by the Gazebo simulator because of the most efficient way of getting odometry in terms of computation power needed performing simulation in comparison to visual or icp odometry algorithms.
 
 \subsection{Motion planner}
@@ -409,7 +409,7 @@ It has been decided to use the second approach and use gathered point clouds to 
  To perform object grasping using a Moveit following steps are required : 
  \begin{enumerate}
   \item Object detection: The robotic arm needs to be able to detect and locate the object to be grasped. This can be done using various algorithms in case presented in this work it will be YOLO network.
-  \item Grasp planning: Once the object has been located, a grasping plugin, such as the Grasp Pose Planner or the MoveIt Grasp Library, is used to generate a set of valid grasp poses for the object. These grasp poses take into account the geometry of the object and the capabilities of the robotic arm. In these work different aproaches were tested and described below.
+  \item Grasp planning: Once the object has been located, a grasping plugin, such as the Grasp Pose Planner or the MoveIt Grasp Library, is used to generate a set of valid grasp poses for the object. These grasp poses take into account the geometry of the object and the capabilities of the robotic arm. In these work different approaches were tested and described below.
   \item Motion planning: The robotic arm uses the MoveIt Motion Planning pipeline to plan and execute a trajectory for the robotic arm to move to the grasp pose. The motion planning pipeline takes into account the kinematics and dynamics of the robotic arm, as well as any obstacles that may be present in the environment which in this case are going to be created by Octomap.
   \item Grasp execution: Once the robotic arm reaches the grasp pose, the gripper is closed to grasp the object. Force-torque sensor data is used to ensure that the robotic arm applies the appropriate force to grasp the object without damaging it.
   \item Object manipulation: Once the object is grasped, the robotic arm uses the MoveIt Motion Planning pipeline to plan and execute a trajectory for the robotic arm to move the grasped object to the desired location.
@@ -484,7 +484,7 @@ The MoveIt Task Constructor is used to ensure ROS communication with the decisio
 During the installation process, many problems have occurred. With time, most of them have been resolved, however two issues could not have been fixed. It revolved around the compatibility of the OpenCV version, used by MoveIt Deep Grasps. Another error that was not resolved was the absence of certain files in the package itself.
 
 \subsection{MoveIt Grasps}
-MoveIt Grasps is yet another package designed for a Robot Operating System, maintained by the aforementioned Picknik.ai. Its main task is to generate grip points for simple objects, such as blocks and cylinders. This package is continuation of the MoveIt pick and place library. It is also the most popular package for grasp detection.
+MoveIt Grasps is yet another package designed for a Robot Operating System, maintained by the aforementioned Picknik.ai. Its main task is to generate grip points for simple objects, such as blocks and cylinders. This package is a continuation of the MoveIt pick and place library. It is also the most popular package for grasp detection.
 
 Attempts of installing the package have failed due to file compatibility issues. Extensive research has shown that due to MoveIt changes made in 2021, the package could no longer be supported. As a result, it became impossible to use it in our version of software.
 
@@ -513,9 +513,9 @@ Autonomy actions would be maintained by \textit{state\_controller} node which co
 \FloatBarrier
 
 Next steps of achieving whole-body control could be to implement shared URDF file with mobile robot and robotic arm to MoveIt planner ad creating MoveGroupInterface object, to perform whole-body control with plan() function.
-When the pose is created, next goal for \textit{move\_base} could be send to force mobile platform to change its location. Due to not achieving URDF file describing whole robot, it was not possible to evaluate this solution. This problem has been described below.
+When the pose is created, the next goal for \textit{move\_base} could be sent to force the mobile platform to change its location. Due to not achieving URDF file describing the whole robot, it was not possible to evaluate this solution. This problem has been described below.
 
-To minimize the energy consumption movement, the cost function has to be properly described as a sum of torque of each link needed for achieving desired position and energy needed for moving mobile platform to the necessary position. Function has been presented below
+To minimize the energy consumption of movement, the cost function has to be properly described as a sum of torque of each link needed for achieving desired position and energy needed for moving the mobile platform to the necessary position. Function has been presented below
 
 \begin{equation}
 \arg_{v,\tau} \min = \sum_{i=1}^{7} \tau_i^2 + E_{pos}
@@ -524,12 +524,12 @@ To minimize the energy consumption movement, the cost function has to be properl
 where $\tau$ is a torque for $i$-th link and $E_{pos}$ is energy needed for the robot to move required distance given by path length, its mass and velocity $v$.
 
 \section{Other difficulties}
-During developing whole system, many diffculties occured. Implementation problems prevented completing the task of creating whole-body-motion control algorithm due to some significant unresolved errors.
+During developing whole system, many difficulties occurred. Implementation problems prevented completing the task of creating whole-body-motion control algorithm due to some significant unresolved errors.
 
 \subsection{Integrating Dingo and Panda}
 During integrating mobile robot Dingo with robotic arm Panda first step was to create common \textit{URDF} file to connect both robots together. However, for the simulation purposes, all movable parts have to be described by \textit{Hardware\_Interface}
-and placed in common set. At the begginig, the \textit{tf\_tree} was broken, due to not all links and joints beeing created. Because of the written drivers, with checking number of joints it was impossible to run the simulation. After changing the condition values which are responsible for checking the amount of joints to register to the \textit{ros\_control} package, it turned out that Gazebo simulator is not able to control more sets of \textit{Hardware\_Joints}
-than one, probably because of the namespace conflict of Dingo and Panda robots. Probably it could be repaired by rewritting part of the Panda driver which use Hardware Joints interface and to separate these joints from joints used by \textit{move\_base}, but it was too time consuming to perform succesfully.
+and placed in common set. At the begging, the \textit{tf\_tree} was broken, due to not all links and joints being created. Because of the written drivers, with checking number of joints it was impossible to run the simulation. After changing the condition values which are responsible for checking the amount of joints to register to the \textit{ros\_control} package, it turned out that Gazebo simulator is not able to control more sets of \textit{Hardware\_Joints}
+than one, probably because of the namespace conflict of Dingo and Panda robots. Probably it could be repaired by rewriting part of the Panda driver which use Hardware Joints interface and to separate these joints from joints used by \textit{move\_base}, but it was too time consuming to perform successfully.
 
 \begin{figure}[ht]
   \centering
@@ -545,20 +545,15 @@ than one, probably because of the namespace conflict of Dingo and Panda robots. 
 \end{figure}
 \FloatBarrier
 
-After some work and rewritting URDF files to provide connectivity and proper parametrisation, full model presented in Gazebo was achieved, but due to drivers issue mentioned above
+After some work and rewriting URDF files to provide connectivity and proper parametrization, full model presented in Gazebo was achieved, but due to drivers issue mentioned above
 gazebo simulator dies after launching full mode with message \break \texttt{Segmentation fault (core dumped)} \break
 \texttt{gazebo-5 process has died pid 8354, exit code 139}
 
 \section{Conclusion}
-The presented algorithm for the whole-body-control approach might be useful in various robotic systems. However, its implementation using Robot Operating System proved to be problematic especially with the newest distribution of ROS and Ubuntu. 
+The presented algorithm for the whole-body-control approach might be useful in various robotic systems. However, its implementation using Robot Operating System proved to be problematic, especially with the newest distribution of ROS and Ubuntu. 
 Various integration problems indicate the selection of another technological stack. Further research is needed to fully explore the potential of this approach and implement the cost function for arm and mobile base simultaneous control in terms of energy optimization.
-With longer time horizon, rewritting presented algorithms could be performed to allow them operate with currently available versions of libraries needed, but in therms of quick implementation and develop the algorithm, using older and better debugged versions is worth considering, but would not be a solution because of the necessary features which have been brought up in last versions. 
+With longer time horizon, rewriting presented algorithms could be performed to allow them to operate with currently available versions of libraries needed, but in therms of quick implementation and develop the algorithm, using older and better debugged versions is worth considering, but would not be a solution because of the necessary features which have been brought up in last versions.
 % use section* for acknowledgement
-\section*{Acknowledgment}
-
-
-The authors would like to thank...
-
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
