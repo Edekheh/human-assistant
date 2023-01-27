@@ -382,7 +382,7 @@ As an odometry source, it has been decided to use odometry information given by 
 \subsection{Motion planner}
 To move the platform in simulated environment, it has been decided to use \textit{move\_base} package with global planner \textit{NavfnROS} and local planner \textit{TrajectoryPlanner ROS}. \textit{NavfnROS} is an implementation of fast, interpolated navigation function used to create paths to the target position.  \textit{TrajectoryPlanner ROS} is a local planner with creates set of different trajectories with kinematic constraints
 and scores them in terms of how close they are to the created global path. Local plan with the highest score is the send to the base controller as a \textit{geometry message}.
-Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented. 
+Octomap was considered as an extension of the system to calculate the possibility of going under the obstacles such as tables but it has not been implemented as a part of navigation pipeline.
 
 \begin{figure}[ht]
   \centering
@@ -397,19 +397,25 @@ It has been decided to use the second approach and use gathered point clouds to 
 
 
 \section{Manipulator control}
-To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a Motion Planning Framework integrated with Robot Operating System. It is primarily used for mobile manipulation and grasping tasks, and can be integrated with various robot platforms and sensor systems. MoveIt provides a high-level interface for controlling a robot's motion, and includes features such as motion planning, collision detection, and visualization tools \cite{MOVEIT}.
-MoveIt uses IKFast the Roboti Kinematics Compiler which is a powerful inverse kinematics solver. To perform grip an object action, it needs information such as 
-data below \cite{grapsmessage}
-\begin{itemize}
-  \item trajectory\_msgs/JointTrajectory pre\_grasp\_posture - internal posture of the hand for the pre-grasp only positions are used
-  \item trajectory\_msgs/JointTrajectory grasp\_posture - internal posture of the hand for the grasp
-  positions and efforts are used
-  \item geometry\_msgs/PoseStamped grasp\_pose - position of the end-effector for the grasp (parent link of the effector)
-  \item float64 grasp\_quality - estimated probability of success for this grasp
-  \item GripperTranslation pre\_grasp\_approach - approach direction to take before picking an object
-  \item GripperTranslation post\_grasp\_retreat - retreat direction to take after a grasp has been completed (object is taken)
-  \item float32 max\_contact\_force - maximum contact force to use while grasping
-\end{itemize} 
+ To control Panda Franka Emika, which is 7 DoF robotic arm, it has been decided to use MoveIt. MoveIt is a powerful tool for controlling the motion of a robotic arm. It is built on top of the Robot Operating System (ROS) and provides a high-level interface for controlling the motion of a robot. This includes features such as:
+ \begin{itemize}
+  \item Motion planning: MoveIt can plan collision-free trajectories for the robot to move between different states. 
+  \item Collision detection: MoveIt can detect collisions between the robot and its environment.
+  \item Visualization tools: MoveIt includes visualization tools that can be used to display the robot's current state, planned trajectories, and collision detection results.
+  \item Grasp planning: MoveIt can be used to plan grasps for grasping an object. It uses the IKFast, a powerful inverse kinematics solver, to compute the required joint angles to reach a target end-effector pose.
+  \item Motion execution: MoveIt can execute planned trajectories on the robot and also includes low-level controllers for sending commands to the robot's joints.
+ \end{itemize}
+
+ To perform object grasping using a Moveit following steps are required : 
+ \begin{enumerate}
+  \item Object detection: The robotic arm needs to be able to detect and locate the object to be grasped. This can be done using various algorithms in case presented in this work it will be YOLO network.
+  \item Grasp planning: Once the object has been located, a grasping plugin, such as the Grasp Pose Planner or the MoveIt Grasp Library, is used to generate a set of valid grasp poses for the object. These grasp poses take into account the geometry of the object and the capabilities of the robotic arm. In these work different aproaches were tested and described below.
+  \item Motion planning: The robotic arm uses the MoveIt Motion Planning pipeline to plan and execute a trajectory for the robotic arm to move to the grasp pose. The motion planning pipeline takes into account the kinematics and dynamics of the robotic arm, as well as any obstacles that may be present in the environment which in this case are going to be created by Octomap.
+  \item Grasp execution: Once the robotic arm reaches the grasp pose, the gripper is closed to grasp the object. Force-torque sensor data is used to ensure that the robotic arm applies the appropriate force to grasp the object without damaging it.
+  \item Object manipulation: Once the object is grasped, the robotic arm uses the MoveIt Motion Planning pipeline to plan and execute a trajectory for the robotic arm to move the grasped object to the desired location.
+  \item Release: The gripper is opened to release the object.
+ \end{enumerate}
+
 
 \section{Object recognition}
 In this section YOLO algorithm was described, which was used for object recogniton task. This section also contains a decryption of a process of integrating and installing dark-net ROS package \cite{YOLO_ROS}.
@@ -501,12 +507,23 @@ Grabbing action should also be extended to measure the distance from the base\_l
 Autonomy actions would be maintained by \textit{state\_controller} node which could have structure presented below.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{img/states.png}
+  \includegraphics[width=0.4\textwidth]{img/states.png}
   \caption[states controller structure]{States controller concept}
 \end{figure}
 \FloatBarrier
 
-\section{Difficulties}
+Next steps of achieving whole-body control could be to implement shared URDF file with mobile robot and robotic arm to MoveIt planner ad creating MoveGroupInterface object, to perform whole-body control with plan() function.
+When the pose is created, next goal for \textit{move\_base} could be send to force mobile platform to change its location. Due to not achieving URDF file describing whole robot, it was not possible to evaluate this solution. This problem has been described below.
+
+To minimize the energy consumption movement, the cost function has to be properly described as a sum of torque of each link needed for achieving desired position and energy needed for moving mobile platform to the necessary position. Function has been presented below
+
+\begin{equation}
+\arg_{v,\tau} \min = \sum_{i=1}^{7} \tau_i^2 + E_{pos}
+\end{equation}
+
+where $\tau$ is a torque for $i$-th link and $E_{pos}$ is energy needed for the robot to move required distance given by path length, its mass and velocity $v$.
+
+\section{Other difficulties}
 During developing whole system, many diffculties occured. Implementation problems prevented completing the task of creating whole-body-motion control algorithm due to some significant unresolved errors.
 
 \subsection{Integrating Dingo and Panda}
